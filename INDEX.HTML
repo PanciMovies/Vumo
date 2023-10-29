@@ -1,0 +1,2992 @@
+<?xml version='1.0' encoding='utf-8'?><?xml-stylesheet href="https://www.blogger.com/styles/atom.css" type="text/css"?><feed xmlns='http://www.w3.org/2005/Atom' xmlns:openSearch='http://a9.com/-/spec/opensearchrss/1.0/' xmlns:gd='http://schemas.google.com/g/2005' xmlns:thr='http://purl.org/syndication/thread/1.0' xmlns:georss='http://www.georss.org/georss'><id>tag:blogger.com,1999:blog-7600403054916393488.archive</id><updated>2023-10-28T19:29:38.263-07:00</updated><title type='text'>QPeli</title><link rel='http://schemas.google.com/g/2005#feed' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/archive'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/archive'/><link rel='http://schemas.google.com/g/2005#post' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/archive'/><link rel='alternate' type='text/html' href='http://vumo23.blogspot.com/'/><author><name>pancimovies</name><uri>https://www.blogger.com/profile/17016404698357411229</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='35' height='35' src='//www.blogger.com/img/blogger_logo_round_35.png'/></author><generator version='7.00' uri='https://www.blogger.com'>Blogger</generator><entry><id>tag:blogger.com,1999:blog-7600403054916393488.layout</id><published>2023-10-28T19:29:18.129-07:00</published><updated>2023-10-28T19:29:38.263-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#template'/><title type='text'>Plantilla: QPeli</title><content type='text'>&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html b:css='false' b:defaultwidgetversion='2' b:js='true' b:layoutsVersion='3' b:responsive='true' b:templateVersion='1.3.0' expr:class='data:blog.languageDirection' expr:dir='data:blog.languageDirection' expr:lang='data:blog.localeUnderscoreDelimited' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'&gt;
+
+
+
+&lt;head&gt;
+
+&lt;!-- Basic data --&gt;
+
+&lt;meta expr:charset='data:blog.encoding'/&gt;
+
+&lt;meta expr:content='data:view.isHomepage ? &amp;quot;website&amp;quot; : &amp;quot;article&amp;quot;' property='og:type'/&gt;
+
+
+
+&lt;!-- Responsive viewport --&gt;
+
+&lt;meta content='width=device-width,initial-scale=1' name='viewport'/&gt;
+
+
+
+&lt;!-- App name --&gt;
+
+&lt;meta expr:content='data:blog.title' name='application-name'/&gt;
+
+&lt;meta expr:content='data:blog.title' property='og:site_name'/&gt;
+
+
+
+&lt;!-- Meta Referrer Tag --&gt;
+
+&lt;meta content='unsafe-url' name='referrer'/&gt;
+
+
+
+&lt;!-- Color del Tema --&gt;
+
+&lt;meta content='#fff' name='theme-color'/&gt;
+
+  
+
+&lt;!-- Type of twitter card --&gt;
+
+&lt;meta content='summary_large_image' name='twitter:card'/&gt;
+
+
+
+&lt;!-- favicon --&gt;
+
+&lt;link expr:href='data:blog.blogspotFaviconUrl' rel='icon' type='image/x-icon'/&gt;
+
+
+
+&lt;!-- Url canonical --&gt;
+
+&lt;meta expr:content='data:view.url.canonical' property='og:url'/&gt;
+
+&lt;link expr:href='data:view.url.canonical' rel='canonical'/&gt;
+
+
+
+&lt;!-- Descripcion --&gt;
+
+&lt;b:if cond='data:view.description'&gt;
+
+   &lt;meta expr:content='data:view.description.escaped' property='og:description'/&gt;
+
+   &lt;meta expr:content='data:view.description.escaped' name='description'/&gt;
+
+&lt;/b:if&gt;
+
+
+
+&lt;b:if cond='data:view.isError or data:view.isArchive or data:view.isSearch'&gt;
+
+   &lt;meta content='noindex,follow' name='robots'/&gt;
+
+&lt;/b:if&gt;
+
+
+
+&lt;!-- Featured Image --&gt;
+
+&lt;b:if cond='data:widgets'&gt;
+
+   &lt;b:loop values='data:widgets.Blog.first.posts where (p =&amp;gt; p.featuredImage) map (p =&amp;gt; p.featuredImage)' var='imageUrl'&gt;
+
+     &lt;meta expr:content='resizeImage(data:imageUrl,1200,&amp;quot;1200:630&amp;quot;)' property='og:image'/&gt;
+
+   &lt;/b:loop&gt;
+
+   &lt;meta content='1200' property='og:image:width'/&gt;
+
+   &lt;meta content='630' property='og:image:height'/&gt;
+
+&lt;/b:if&gt;
+
+
+
+&lt;!-- Title --&gt;
+
+&lt;b:with value='data:view.isError ? data:messages.theresNothingHere : data:view.title.escaped' var='title'&gt;
+
+   &lt;meta expr:content='data:title' property='og:title'/&gt;
+
+   &lt;meta expr:content='data:title' name='twitter:title'/&gt;
+
+   &lt;title&gt;&lt;data:title/&gt;&lt;/title&gt;
+
+&lt;/b:with&gt;
+
+
+
+&lt;!-- Feeds --&gt;
+
+&lt;b:if cond='data:blog.feedLinks'&gt;
+
+&lt;b:with value='path(data:blog.homepageUrl.canonical,&amp;quot;feeds/posts/default&amp;quot;)' var='feeds'&gt;
+
+   &lt;link expr:href='data:feeds' rel='alternate' title='Atom 1.0' type='application/atom+xml'/&gt;
+
+   &lt;link expr:href='data:feeds params {alt: &amp;quot;rss&amp;quot;}' rel='alternate' title='RSS 2.0' type='application/rss+xml'/&gt;
+
+&lt;/b:with&gt;
+
+&lt;/b:if&gt;
+
+
+
+&lt;!-- AdSense --&gt;
+
+&lt;b:if cond='data:widgets.AdSense.first or data:blog.adsenseClientId'&gt;
+
+   &lt;script async='async' src='//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'/&gt;
+
+&lt;/b:if&gt;
+
+
+
+&lt;!-- Sitelinks Searchbox --&gt;
+
+&lt;script type='application/ld+json'&gt;
+
+{
+
+    &amp;quot;@context&amp;quot;: &amp;quot;http://schema.org&amp;quot;,
+
+    &amp;quot;@type&amp;quot;: &amp;quot;WebSite&amp;quot;,
+
+    &amp;quot;url&amp;quot;: &amp;quot;&lt;data:blog.homepageUrl.canonical/&gt;&amp;quot;,
+
+    &amp;quot;potentialAction&amp;quot;: {
+
+        &amp;quot;@type&amp;quot;: &amp;quot;SearchAction&amp;quot;,
+
+        &amp;quot;target&amp;quot;: &amp;quot;&lt;data:blog.searchUrl/&gt;?q={search_term_string}&amp;quot;,
+
+        &amp;quot;query-input&amp;quot;: &amp;quot;required name=search_term_string&amp;quot;
+
+    }
+
+}
+
+&lt;/script&gt;
+
+
+
+&lt;b:skin version='1.3.3'&gt;&lt;![CDATA[
+
+
+
+/* -----------------------------------------------
+
+Blogger Template Style
+
+Them Name   :  PanciMovies
+
+Theme URL   :  https://peengler.com/
+
+License     :  Free Version
+
+Version     :  v3.0.0
+
+Author      :  Pancito
+
+Author URL  :  https://peengler.com/
+
+Canvas.xml  :  v1.10.0 zkreations
+
+License     :  Creative Commons Atribucion-NoComercial 4.0 Internacional
+
+License URI :  http://creativecommons.org/licenses/by-nc/4.0/
+
+----------------------------------------------- */
+
+
+
+
+
+/*
+
+&lt;!-- Variable definitions --&gt;
+
+ 
+
+&lt;!-- General Options --&gt;
+
+&lt;Variable name="config.comments" description="Comment system" type="string" default="blogger" value="blogger"/&gt;
+
+&lt;Variable name="config.shortname" description="Shortname of Disqus" type="string" default="shortname" value="shortname"/&gt;
+
+
+
+&lt;Group description="Logo" selector=".cabecera__logo"&gt;
+
+   &lt;Variable name="logo.size.movil.small" description="Logo en Movil" type="length" default="190px" value="190px"/&gt;
+
+   &lt;Variable name="logo.size.tablet" description="Logo en Tablet" type="length" default="200px" value="200px"/&gt;
+
+   &lt;Variable name="logo.size.pc" description="Logo en Ordenador/PC" type="length" default="190px" value="190px"/&gt;
+
+&lt;/Group&gt;
+
+
+
+&lt;Group description="Carousel" selector=".carousel__contenedor"&gt;
+
+  &lt;Variable name="color.fondo.carousel.primary" description="Color del Fondo (Arriba)" type="color" default="#03F5F1" value="#5E05E7"/&gt;
+
+  &lt;Variable name="color.fondo.carousel.second" description="Color del Fondo (Abajo)" type="color" default="#03F5F1" value="#F700FF"/&gt;
+
+&lt;/Group&gt;
+
+
+
+&lt;Group description="Entradas (Inicio/Home)" selector=".contenido__posts"&gt;
+
+  &lt;Variable name="fuente.size.titulo.card.homepage" description="Titulo de las Entradas" type="length" default="17px" min="15px" max="18px" value="17px"/&gt;
+
+  &lt;Variable name="fuente.size.titulo.seccion" description="Texto de la Sección (ÚLTIMAS PELICULAS)" type="length" default="16px" min="15px" max="18px" value="16px"/&gt;
+
+&lt;/Group&gt;
+
+
+
+&lt;Group description="Barra Lateral (Sidebar)" selector=".contenido__sidebar"&gt;
+
+  &lt;Variable name="fuente.size.sidebar.titulo" description="Titulo Gadgets" type="length" default="18px" min="17px" max="22px" value="18px"/&gt;
+
+  &lt;Variable name="fuente.size.sidebar.contenido" description="Texto del Contenido" type="length" default="18px" min="16px" max="20px" value="18px"/&gt;
+
+&lt;/Group&gt;
+
+
+
+&lt;Group description="Botón de Subir" selector=".to-top"&gt;
+
+   &lt;Variable name="top.boton.color" description="Color del Botón" type="color" default="#252525"  value="#252525"/&gt;
+
+   &lt;Variable name="top.boton.color.icono" description="Color del Icono" type="color" default="#fff"  value="#ffffff"/&gt;
+
+      &lt;Variable name="top.boton.size.icono" description="Tamaño del Icono" type="length" default="20px"  value="20px"/&gt;
+
+   &lt;Variable name="top.boton.abajo" description="Margen Abajo" type="length" default="30px" value="30px"/&gt;
+
+   &lt;Variable name="top.boton.derecha" description="Margen Derecho" type="length" default="25px" value="25px"/&gt;
+
+   &lt;Variable name="top.boton.ancho" description="Ancho" type="length" default="32px" value="32px"/&gt;
+
+   &lt;Variable name="top.boton.alto" description="Alto" type="length" default="32px" value="32px"/&gt;
+
+&lt;/Group&gt;
+
+
+
+&lt;Group description="Paginación" selector=".paginacion"&gt;
+
+   &lt;Variable name="fuente.size.paginacion" description="Tamaño del Texto del Botón" type="length" default="15px" min="14px" max="17px" value="15px"/&gt;
+
+&lt;/Group&gt;
+
+
+
+&lt;Group description="Pie de Página (Footer)" selector=".footer"&gt;
+
+   &lt;Variable name="fuente.size.creditos" description="Texto del Pie de Página" type="length" default="18px" min="17px" max="20px" value="18px"/&gt;
+
+&lt;/Group&gt;
+
+
+
+&lt;Group description="Entradas (Post)" selector=".grid-movie-post-one"&gt;
+
+  &lt;Variable name="fuente.size.titulo.h1.entrada" description="Titulo de la Entrada (H1)" type="length" default="35px" min="12px" max="45px" value="35px"/&gt;
+
+  &lt;Variable name="fuente.size.tagpost" description="Etiquetas y Compartir" type="length" default="16px" min="12px" max="25px" value="16px"/&gt;
+
+  &lt;Variable name="fuente.size.contenido.entrada" description="Texto del Contenido" type="length" default="20px" min="12px" max="35px" value="20px"/&gt;
+
+  &lt;Variable name="fuente.size.compartir.entrada" description="Texto de Compartir" type="length" default="16px" min="12px" max="25px" value="16px"/&gt;
+
+  &lt;Variable name="fuente.size.entradas.relacionadas" description="Titulo de las Entradas Relacionadas" type="length" default="16px" min="12px" max="25px" value="16px"/&gt;
+
+  &lt;Variable name="color.barra.blockquote" description="Blockquote Barra" type="color" default="#00CC8F" value="#00CC8F"/&gt;
+
+&lt;/Group&gt;
+
+
+
+&lt;Group description="Color del Enlace/Link"&gt;
+
+  &lt;Variable name="color.texto.primary" description="Color del Enlace" type="color" default="#ffd201" value="#ffd201"/&gt;
+
+&lt;/Group&gt;
+
+
+
+&lt;Group description="Botones (Menú, Paginación)"&gt;
+
+  &lt;Variable name="btn.primary" description="Color Primario (Centro)" type="color" default="#ffd201" value="#ffd201"/&gt;
+
+  &lt;Variable name="btn.primary.hover" description="Color Secundario (Borde)" type="color" default="#a28500" value="#a28500"/&gt;
+
+  &lt;Variable name="btn.second" description="Color Primario (Centro-Hover)" type="color" default="#fff" value="#ffffff"/&gt;
+
+  &lt;Variable name="btn.second.hover" description="Color Secundario (Borde-Hover)" type="color" default="#ccc" value="#cccccc"/&gt;
+
+  &lt;Variable name="color.texto.hover" description="Texto Menú y Páginación (Hover)" type="color" default="#000" value="#000000"/&gt;
+
+&lt;/Group&gt;
+
+
+
+  &lt;Variable name="color.texto.claro" description="Texto Claro" type="color" hideEditor="true" default="#ffffff" value="#ffffff"/&gt;
+
+  &lt;Variable name="color.texto.oscuro" description="Texto Oscuro" type="color" hideEditor="true" default="#000000" value="#000000"/&gt;
+
+  &lt;Variable name="fuente.size.carousel" description="Tamaño del Titulo del Carousel" hideEditor="true" type="length" default="15px" min="12px" max="25px" value="15px"/&gt;
+
+
+
+*/
+
+
+
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:.50em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+
+/*Fix: Unnecessary elements removed*/
+
+.widget-item-control,.item-control.blog-admin,
+
+.continue,.loadmore,.thread-chrome.thread-collapsed,
+
+.singleton-element:not(.cookie-choices-info),
+
+.noAllowNewComments .comment-reply,
+
+.comments .hidden {display:none}
+
+
+
+/*Fix: Show lightbox*/
+
+.CSS_LIGHTBOX{z-index:90001!important}
+
+
+
+/*Fix: Responsive images*/
+
+a[style^=margin-left],
+
+a[imageanchor]:not([style*=float]) {
+
+    margin-right: 0 !important;
+
+    margin-left: 0 !important;
+
+}
+
+
+
+.widget-content img,
+
+img[data-original-height],
+
+img[data-original-width] {height: auto;}
+
+
+
+/*Fix: Responsive videos*/
+
+.BLOG_video_class, .b-hbp-video, .b-uploade {
+
+    max-width: 100%;
+
+}
+
+
+
+/*Fix: Comment Editor*/
+
+#comment-editor{
+
+    border:0;
+
+    width:100%;
+
+    min-height:220px
+
+}
+
+
+
+
+
+@font-face{font-family:'Roboto';font-style:normal;src:url(https://dl.dropbox.com/s/dqidil46038ie85/Roboto-bold.ttf) format("truetype")}
+
+@font-face{font-family:'Jost';font-style:normal;src:url(https://dl.dropbox.com/s/tn5s2t51nkajg9v/Jost.ttf) format("truetype")}
+
+@font-face{font-family:"Font Awesome 5 Brands";font-display:swap;font-style:normal;font-weight:400;font-display:block;src:url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/webfonts/fa-brands-400.eot);src:url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/webfonts/fa-brands-400.eot?#iefix) format("embedded-opentype"),url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/webfonts/fa-brands-400.woff2) format("woff2"),url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/webfonts/fa-brands-400.woff) format("woff"),url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/webfonts/fa-brands-400.ttf) format("truetype"),url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/webfonts/fa-brands-400.svg#fontawesome) format("svg")}
+
+.fab{font-family:"Font Awesome 5 Brands";font-weight:400}
+
+@font-face{font-family:"Font Awesome 5 Free";font-display:swap;font-style:normal;font-weight:400;font-display:block;src:url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/webfonts/fa-regular-400.eot);src:url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/webfonts/fa-regular-400.eot?#iefix) format("embedded-opentype"),url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/webfonts/fa-regular-400.woff2) format("woff2"),url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/webfonts/fa-regular-400.woff) format("woff"),url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/webfonts/fa-regular-400.ttf) format("truetype"),url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/webfonts/fa-regular-400.svg#fontawesome) format("svg")}
+
+.far{font-family:"Font Awesome 5 Free";font-weight:400}
+
+@font-face{font-family:"Font Awesome 5 Free";font-display:swap;font-style:normal;font-weight:900;font-display:block;src:url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/webfonts/fa-solid-900.eot);src:url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/webfonts/fa-solid-900.eot?#iefix) format("embedded-opentype"),url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/webfonts/fa-solid-900.woff2) format("woff2"),url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/webfonts/fa-solid-900.woff) format("woff"),url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/webfonts/fa-solid-900.ttf) format("truetype"),url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/webfonts/fa-solid-900.svg#fontawesome) format("svg")}
+
+.fa,.far,.fas{font-family:"Font Awesome 5 Free"}
+
+.fa,.fas{font-weight:900}
+
+*{padding:0;margin:0;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+
+html{scroll-behavior:smooth}
+
+body{margin:0;padding:0;color:#fff;font-family:'Jost',sans-serif;font-size:16px;letter-spacing:.4px;background-color:#000}
+
+.firstIMG {display:none}
+
+a{text-decoration:none}
+
+ul,li,.dropdown-menu,.dropdown-menu li{list-style-type:none}
+
+button:focus,button[type=submit]{outline:none;border:none}
+
+textarea:focus,input:focus{outline:none}
+
+.contenido__sidebar .widget-content{padding-bottom:35px;font-size:$(fuente.size.sidebar.contenido);font-weight:400;font-family:'Jost',sans-serif}
+
+.text-center{text-align:center}
+
+.to-top{background:$(top.boton.color);position:fixed;bottom:$(top.boton.abajo);right:$(top.boton.derecha);width:$(top.boton.ancho);height:$(top.boton.alto);display:flex;align-items:center;justify-content:center;font-size:$(top.boton.size.icono);color:$(top.boton.color.icono);text-decoration:none;transition:all .4s;z-index:1010;cursor:pointer;opacity:0}
+
+.to-top:after{content:'\f106';position:relative;font-family:'Font Awesome 5 Free';font-weight:600}
+
+.to-top.active{bottom:32px;pointer-events:auto;opacity:1}
+
+.btn-cerrar{background:#ff3c3c!important}
+
+.btn-primary,input.gsc-search-button,.contact-form-button-submit,.bton-paginacion,.field button{background:$(btn.primary.hover);background:-moz-radial-gradient(center,ellipse cover,$(btn.primary) 0%,$(btn.primary.hover) 100%);background:-webkit-radial-gradient(center,ellipse cover,$(btn.primary) 0%,$(btn.primary.hover) 100%);background:radial-gradient(ellipse at center,$(btn.primary) 0%,$(btn.primary.hover) 100%)}
+
+.btn-primary:hover,input.gsc-search-button:hover,.boton__movil-icono:hover,.contact-form-button-submit:hover,.bton-paginacion:hover{color:#000;background:$(btn.second.hover);background:-moz-radial-gradient(center,ellipse cover,$(btn.second) 0%,$(btn.second.hover) 100%);background:-webkit-radial-gradient(center,ellipse cover,$(btn.second) 0%,$(btn.second.hover) 100%);background:radial-gradient(ellipse at center,$(btn.second) 0%,$(btn.second.hover) 100%)}
+
+.animacion,.dropdown-menu li:hover &gt; a,.cabecera__buscador-boton,.boton__movil-icono,.contenido__sidebar .list-label-widget-content li,.contact-form-button-submit,input.gsc-search-button,.bton-paginacion,.info-post a,.compartir-post a i,.grid-movie-post,.field button,.field button:hover{-webkit-transition:all .2s ease;-moz-transition:all .2s ease;-o-transition:all .2s ease;transition:all .2s ease}
+
+.p{display:grid;grid-column:1/5;text-align:center;padding:3% 0;font-size:18.5px}
+
+.grid-movie-post-one img{max-width: 100%;height: auto;}
+
+.grid-movie-post a{position:relative;text-decoration:none;display:inline-block;color:#fff;padding:0 1px;transition:color ease .3s;z-index:0}
+
+.grid-movie-post a[style*='display: block']{padding:0!important;display:none}
+
+.fa-home:after,.fa-play-circle:after,.fa-search:after,.fa-bars:after,.fa-times:after,.fa-chevron-left:after,.fa-chevron-right:after,.fa-bell-o:after,.fa-exclamation:after,.fa-check:after,.fa-exclamation-triangle,.fa-cloud-download{font-family:'Font Awesome 5 Free';font-weight:900;font-style:normal}
+
+.fa-facebook:after,.fa-twitter:after,.fa-linkedin:after,.fa-pinterest:after,.fa-youtube:after,.fa-instagram:after{font-family:"Font Awesome 5 Brands";font-weight:500;font-style:normal}
+
+.fa-home:after{content:'\f015'}
+
+.fa-cloud-download:after{content:'\f381'}
+
+.fa-exclamation-triangle:after{content:'\f071'}
+
+.fa-check:after{content:'\f00c'}
+
+.fa-exclamation:after{content:'\f12a'}
+
+.fa-bell-o:after{content:'\f0f3'}
+
+.fa-chevron-left:after{content:'\f053'}
+
+.fa-chevron-right:after{content:'\f054'}
+
+.fa-play-circle:after{content:'\f144'}
+
+.fa-search:after{content:'\f002'}
+
+.fa-bars:after{content:'\f0c9'}
+
+.fa-times:after{content:'\f00d'}
+
+.fa-facebook:after{content:'\f39e'}
+
+.fa-twitter:after{content:'\f099'}
+
+.fa-linkedin:after{content:'\f0e1'}
+
+.fa-pinterest:after{content:'\f231'}
+
+.fa-youtube:after{content:'\f167'}
+
+.fa-instagram:after{content:'\f16d'}
+
+.carousel,.footer,.cabecera,.dropdown-menu,.row-1{max-width:1080px;margin:auto}
+
+.bg-contenido-sidebar,.row-1{background:#000;height:100%}
+
+.contenido,.carousel-homepage,.carousel{background:$(color.fondo.carousel.second);background:-moz-linear-gradient(top,$(color.fondo.carousel.primary) 0%,$(color.fondo.carousel.second) 100%);background:-webkit-linear-gradient(top,$(color.fondo.carousel.primary) 0%,$(color.fondo.carousel.second) 100%);background:linear-gradient(to bottom,$(color.fondo.carousel.primary) 0%,$(color.fondo.carousel.second) 100%);height:325px}
+
+.contenido__sidebar{padding-right:20px;width:27%}
+
+.footer{margin:auto}
+
+.container-movie .grid-movie{display: flex;flex-wrap: wrap;padding:20px;background:#080808}
+
+::-webkit-scrollbar{width:12px}
+
+::-webkit-scrollbar-thumb{background:#777;border-radius:4px}
+
+::-webkit-scrollbar-thumb:active{background-color:#292929}
+
+::-webkit-scrollbar-thumb:hover{background:#4b4b4b;box-shadow:0 0 2px 1px rgba(0,0,0,0.2)}
+
+::-webkit-scrollbar-track{background:#fff;border-radius:4px}
+
+::-webkit-scrollbar-track:hover,::-webkit-scrollbar-track:active{background:#fff}
+
+#grid-movie-relacionadas .movie-titulo h3{font-family:'Roboto';padding:5px 0 7px;line-height:20px;font-size:$(fuente.size.entradas.relacionadas)!important}
+
+.container-movie.entradas-relacionadas{padding:0;min-height:auto;margin:25px 0}
+
+.container-movie.entradas-relacionadas .grid-movie{background:none;padding:0}
+
+.comments{clear:both;margin-top:10px;margin-bottom:0;font-family:Arial;line-height:18px;font-size:13px;padding:5px 15px}
+
+.comments .comments-content{margin-bottom:16px;font-weight:400;text-align:left}
+
+.comments .comment .comment-actions a,.comments .comment .continue a{display:inline-block;margin:0 0 10px 10px;padding:0 5px;color:#424242!important;text-align:center;text-decoration:none;background:#fede72;border:1px solid #fec648;border-radius:2px;line-height:28px;font-weight:400;font-family:'Roboto';cursor:pointer}
+
+.comments .comments-content .comment-thread ol{list-style-type:none;padding:0}
+
+.comments .comments-content .inline-thread{padding:0}
+
+.comments .comments-content .comment-thread{margin:8px 0}
+
+.comments .comments-content .comment-thread:empty{display:none}
+
+.comment-replies{margin-top:1em;margin-left:40px;padding:2px 5px}
+
+.comments .comments-content .comment{margin-bottom:0;padding-bottom:0}
+
+.comments .comments-content .comment:first-child{padding-top:16px}
+
+.comments .comments-content .comment:last-child{border-bottom:0;padding-bottom:0}
+
+.comments .comments-content .comment-body{position:relative}
+
+.comments .comments-content .user{font-style:normal;font-weight:400}
+
+.comments .comments-content .user a{font-family:'Roboto';color:$(color.texto.primary);font-weight:400;text-decoration:none}
+
+.comments .comments-content .icon.blog-author{width:18px;height:18px;display:inline-block;margin:0 0 -4px 6px}
+
+.comments .comments-content .datetime a{color:#fff;font-size:12px;float:right;text-decoration:none}
+
+.comment-content{font-family:'Jost';font-size:15px;color:#fff;margin:0 0 8px;padding:5px}
+
+.comment-header{font-size:14px;text-transform:uppercase;border-bottom:1px solid #676767;padding:5px}
+
+.comments .comments-content .owner-actions{position:absolute;right:0;top:0}
+
+.comments .comments-replybox{border:none;height:230px;width:100%}
+
+.comments .comment-replybox-thread{margin-top:0}
+
+.comments .comment-replybox-single{margin-top:5px;margin-left:48px}
+
+.comments .comments-content .loadmore a{display:block;padding:10px 16px;text-align:center}
+
+.comments .thread-toggle{cursor:pointer;display:inline-block}
+
+.comments .comments-content .loadmore{cursor:pointer;max-height:3em;margin-top:0}
+
+.comments .comments-content .loadmore.loaded{max-height:0;opacity:0;overflow:hidden}
+
+.comments .thread-chrome.thread-collapsed{display:none}
+
+.comments .thread-toggle{display:inline-block}
+
+.comments .thread-toggle .thread-arrow{display:inline-block;height:6px;width:7px;overflow:visible;margin:.3em;padding-right:4px}
+
+.comments .thread-expanded .thread-arrow{background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAc AAAAHCAYAAADEUlfTAAAAG0lEQVR42mNgwAfKy8v/48I4FeA0AacVDFQBAP9wJkE/KhUMAAAAAElFTkSuQmCC") no-repeat scroll 0 0 transparent}
+
+.comments .thread-collapsed .thread-arrow{background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA AcAAAAHCAYAAADEUlfTAAAAJUlEQVR42mNgAILy8vL/DLgASBKnApgkVgXIkhgKiNKJ005s4gDLbCZBiSxfygAAAAB JRU5ErkJggg==") no-repeat scroll 0 0 transparent}
+
+.avatar-image-container{float:left;vertical-align:middle;overflow:hidden;width:60px!important;height:51px!important;max-width:65px!important;max-height:51px!important}
+
+.comments .avatar-image-container img{padding:2px;border:none;width:45px!important;height:45px!important;max-width:45px!important;max-height:45px!important}
+
+.comments .comment-block{margin-left:55px;position:relative}
+
+@media screen and (max-device-width:480px) {
+
+.comments .comments-content .comment-replies{margin-left:0}
+
+}
+
+.comments .thread-toggle a{color:#fff!important;font-weight:700;font-family:'Roboto';text-transform:uppercase}
+
+header{position:relative;z-index:99999999999;padding-bottom:2px}
+
+header:before,.bg-footer:before{content:"";position:absolute;height:.2em;width:100%;background:linear-gradient(to right,rgba(0,0,0,1) 0%,$(color.fondo.carousel.primary) 44%,rgba(0,0,0,1) 100%)}
+
+header:before{bottom:-.1px}
+
+.cabecera-bg{background:#000}
+
+.cabecera{display:flex;align-items:center;height:85px;position:relative;margin:auto;width:100%}
+
+.cabecera__logo-img{width:100%;height:auto;margin:auto;display:block}
+
+#Image1_img{display:flex;width:100%}
+
+.cabecera__logo{width:$(logo.size.pc)}
+
+.cabecera__buscador{width:60%;margin-left:10%}
+
+.cabecera__buscador-input{padding:10px;font-size:17px;border:1px solid #0a0a0a;float:left;width:80%;background:#0a0a0a;color:#fff}
+
+.cabecera__buscador-boton,.boton__movil-icono{float:left;width:50px;padding:10px;color:#000;font-size:19px;border:transparent;cursor:pointer;text-align:center;border-radius:0 6px 6px 0}
+
+.cabecera__buscador-boton:after{content:'\f002';font-family:'Font Awesome 5 Free';font-weight:900}
+
+::-webkit-input-placeholder{opacity:1;-webkit-transition:opacity .5s;transition:opacity .5s}
+
+:-moz-placeholder{opacity:1;-moz-transition:opacity .5s;transition:opacity .5s}
+
+::-moz-placeholder{opacity:1;-moz-transition:opacity .5s;transition:opacity .5s}
+
+:-ms-input-placeholder{opacity:1;-ms-transition:opacity .5s;transition:opacity .5s}
+
+::placeholder{opacity:1;transition:opacity .5s}
+
+:focus::-webkit-input-placeholder{opacity:0}
+
+:focus:-moz-placeholder{opacity:0}
+
+:focus::-moz-placeholder{opacity:0}
+
+:focus:-ms-input-placeholder{opacity:0}
+
+:focus::placeholder{opacity:0}
+
+.wjs-menu,.dropdown-menu a{background:#000;z-index:1;position:relative}
+
+.dropdown-menu,.dropdown-menu ul,.dropdown-menu li{list-style:none;margin:0;padding:0}
+
+.dropdown-menu{display:flex;flex-direction:column}
+
+.dropdown-menu a{display:flex;align-items:center;text-decoration:none;padding:1rem;color:$(color.texto.claro);font-size:15px;position:relative;font-family:'Roboto',sans-serif;font-weight:600;text-transform:uppercase}
+
+.dropdown-menu a:hover{color:$(color.texto.hover)!important}
+
+.dropdown-menu li{position:relative}
+
+.dropdown-menu li:hover &gt; a{color:$(color.texto.oscuro);background:$(btn.primary.hover);background:-moz-radial-gradient(center,ellipse cover,$(btn.primary) 0%,$(btn.primary.hover) 100%);background:-webkit-radial-gradient(center,ellipse cover,$(btn.primary) 0%,$(btn.primary.hover) 100%);background:radial-gradient(ellipse at center,$(btn.primary) 0%,$(btn.primary.hover) 100%)}
+
+.dropdown-menu .is-arrow{margin-left:auto}
+
+.dropdown-menu .is-parent &gt; a .is-arrow::after{content:"";display:inline-block;vertical-align:middle;border-right:4px solid transparent;border-left:4px solid transparent;border-top:4px dashed;margin-left:.5rem}
+
+.carousel-homepage{height:auto}
+
+.carousel{height:325px;padding-top:20px}
+
+.carousel__contenedor{position:relative}
+
+.carousel__siguiente,.carousel__anterior{position:absolute;display:block;width:30px;height:30px;border:none;top:calc(50% - 16px);cursor:pointer;line-height:30px;text-align:center;background:none;color:#000;font-size:23px}
+
+.carousel__siguiente:hover,.carousel__anterior:hover{opacity:60%}
+
+.carousel__anterior{left:-30px}
+
+.carousel__siguiente{right:-30px}
+
+.carousel__lista{overflow:hidden}
+
+.carousel a{text-decoration:none;cursor:pointer}
+
+.carousel .cards__carousel-titulo{padding:6px 3px;display:flex;overflow:hidden;height:42px}
+
+.carousel .cards__carousel-titulo h3{font-size:$(fuente.size.carousel);color:$(color.texto.claro);font-family:"Roboto",sans-serif;letter-spacing:.5px;text-shadow:2px 2px 2px #000}
+
+.carousel .cards__carousel{padding:0 2px}
+
+.cards__carousel:hover img,.cards-movie:hover img{zoom:1;filter:alpha(opacity=50);-webkit-opacity:.5;opacity:.5}
+
+.cards__carousel:hover:after,.cards-movie:hover:after{opacity:1;position:absolute;width:100%}
+
+.cards__carousel:hover i,.cards-movie:hover i{-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);opacity:.8}
+
+.cards__carousel-img,.cards__carousel-img img{position:relative;background:#000;text-align:left;font-size:16px;width:100%;height:240px;object-fit:cover;-o-object-fit:cover;box-shadow:0 0 2px #000}
+
+.cards__carousel-img *,.cards__carousel-img :after,.movie-img *,.movie-img :after{-webkit-box-sizing:border-box;box-sizing:border-box;-webkit-transition:all .35s ease;transition:all .35s ease}
+
+.cards__carousel-img:after,.movie-img:after{position:absolute;top:0;bottom:0;left:0;right:0;content:'';background:rgba(0,0,0,0.5);z-index:1;opacity:0}
+
+.cards__carousel-img i,.movie-img i{position:absolute;top:50%;left:50%;font-size:48px;-webkit-transform:translate(-50%,0%);-moz-transform:translate(-50%,0%);-o-transform:translate(-50%,0%);-ms-transform:translate(-50%,0%);transform:translate(-50%,0%);opacity:0;z-index:2;color:#fff}
+
+.cards__carousel-img a,.movie-img a{position:absolute;top:0;bottom:0;left:0;right:0;z-index:2}
+
+.slick-slider{position:relative;display:block;box-sizing:border-box;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-touch-callout:none;-khtml-user-select:none;-ms-touch-action:pan-y;touch-action:pan-y;-webkit-tap-highlight-color:transparent}
+
+.slick-list{position:relative;display:block;overflow:hidden;margin:0;padding:0}
+
+.slick-list:focus{outline:none}
+
+.slick-list.dragging{cursor:pointer}
+
+.slick-slider .slick-track,.slick-slider .slick-list{-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);-o-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}
+
+.slick-track{position:relative;top:0;left:0;display:block;margin-left:auto;margin-right:auto}
+
+.slick-track:before,.slick-track:after{display:table;content:''}
+
+.slick-track:after{clear:both}
+
+.slick-loading .slick-track{visibility:hidden}
+
+.slick-slide{display:none;float:left;height:100%;min-height:1px}
+
+[dir='rtl'] .slick-slide{float:right}
+
+.slick-slide img{display:block}
+
+.slick-slide.slick-loading img{display:none}
+
+.slick-slide.dragging img{pointer-events:none}
+
+.slick-initialized .slick-slide{display:block}
+
+.slick-loading .slick-slide{visibility:hidden}
+
+.slick-vertical .slick-slide{display:block;height:auto;border:1px solid transparent}
+
+.slick-arrow.slick-hidden{display:none}
+
+.container-movie{margin-bottom:40px;padding:0 10px;min-height:100vh}
+
+.titulo-seccion-post{font-size:22px}
+
+.titulo-seccion,.contenido__sidebar h3{margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:20px 0;font-size:$(fuente.size.titulo.seccion);text-transform:uppercase;letter-spacing:-.3px;font-family:"Roboto",sans-serif;width:97%;color:$(color.texto.claro)}
+
+.movie-titulo{padding:7px 3px;overflow:hidden;height:49px}
+
+.titulo-seccion-link{font-weight:700;color:$(color.texto.primary)}
+
+.titulo-seccion-link:hover{color:$(color.texto.claro)}
+
+.cards-movie { width: 25%;padding: 4px;}
+
+.cards-movie h2,.contenido__sidebar{font-family:"Roboto",sans-serif;font-size:$(fuente.size.sidebar.contenido);color:$(color.texto.claro);text-shadow:2px 2px 2px #000}
+
+.cards-movie:hover h2,.contenido__sidebar .cards__carousel:hover h4{color:$(color.texto.primary)}
+
+.cards-movie h2{font-size:$(fuente.size.titulo.card.homepage)}
+
+.movie-img{position:relative;overflow:hidden;background-color:#000;box-shadow:0 0 4px #000;height:76%}
+
+.movie-img img{max-width:100%;backface-visibility:hidden;vertical-align:top;width:100%;height:100%}
+
+.custom-shape-divider-bottom-1619034933{position:relative;bottom:0;left:0;width:100%;overflow:hidden;line-height:0;background:$(color.fondo.carousel.second);margin-bottom:10px}
+
+.custom-shape-divider-bottom-1619034933 svg{position:relative;display:block;width:calc(100% + 1.3px);height:41px}
+
+.custom-shape-divider-bottom-1619034933 .shape-fill{fill:#000}
+
+.contenido__sidebar li{list-style:none}
+
+.contenido__sidebar h3{margin: 0;font-size:$(fuente.size.sidebar.titulo)!important;padding-left:5px}
+
+.contenido__sidebar &gt; h3:not(:first-child){margin-top:35px;border-top:1px solid #151515;padding-top:35px}
+
+.contenido__sidebar h3:first-of-type{border:none}
+
+.contenido__sidebar .list-label-widget-content ul{list-style:none;padding:0;margin:0}
+
+.contenido__sidebar .list-label-widget-content li{display:flex;cursor:pointer;padding:5px 10px;padding-left:1.3em;background:#000}
+
+.contenido__sidebar .list-label-widget-content li:nth-child(odd){background:#080808}
+
+.contenido__sidebar .list-label-widget-content li a{opacity:.9;-webkit-transition:.5s;transition:.5s;width:100%;display:flex;justify-content:space-between;color:#fff;font-family:sans-serif}
+
+.contenido__sidebar .list-label-widget-content li:before{content:"\f111";font-weight:900;font-family:'Font Awesome 5 Free';margin-left:-2em;width:2.3em;color:#fff;font-size:7px;align-items:center;display:flex}
+
+.contenido__sidebar .list-label-widget-content li span{color:#fff}
+
+.contenido__sidebar .list-label-widget-content li:hover a,.contenido__sidebar .list-label-widget-content li:hover span,.contenido__sidebar .list-label-widget-content li:hover:before{color:$(color.texto.primary)}
+
+.list-label-widget-content span{font-family:"no-parens",sans-serif}
+
+@font-face{font-family:no-parens;src:url(data:application/x-font-woff;base64,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);unicode-range:U+0028,U+0029}
+
+.videoResponsive{position:relative;overflow:hidden;width:100%;padding-top:56.25%}
+
+.responsive-iframe{position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%}
+
+.contenido__sidebar img{width:100%}
+
+.contenido__sidebar p{padding:5px}
+
+.contact-form-widget{margin-left:auto;margin-right:auto;max-width:100%;padding:0;color:#fff}
+
+.fm_name,.fm_email{float:left;padding:5px;width:50%}
+
+.fm_message{padding:5px}
+
+.contact-form-name,.contact-form-email{width:100%;max-width:100%;margin-bottom:10px;height:35px;padding:10px;font-size:18px}
+
+.contact-form-email-message{width:100%;max-width:100%;height:100px;margin-bottom:10px;padding:10px;font-size:16px;font-family:sans-serif}
+
+.contact-form-button-submit{color:#000;width:30%;height:40px;font-size:18px;border:transparent;border-radius:2px;cursor:pointer}
+
+.contact-form-button-submit:hover,input.gsc-search-button:hover{background:#151515;color:#fff}
+
+.gsc-input{width:100%;max-width:100%}
+
+input.gsc-input{height:35px;font-size:18px;padding:10px}
+
+input.gsc-search-button{border:none;border-radius:2px;cursor:pointer;padding:10px;font-weight:700}
+
+.social-nav{padding:0;margin-bottom: 0;list-style:none;display:flex;justify-content:center;flex-wrap:wrap}
+
+.social-nav li{display:inline-block}
+
+.social-nav a{float:left;width:48px;height:48px;font-size:20px;color:#fff;text-decoration:none;cursor:pointer;text-align:center;line-height:48px;background:#000;position:relative;-webkit-transition:.5s;-moz-transition:.5s;-o-transition:.5s;transition:.5s}
+
+.model-2 a{overflow:hidden;font-size:26px;-webkit-border-radius:4px;-moz-border-radius:4px;-ms-border-radius:4px;-o-border-radius:4px;border-radius:4px;margin:1px}
+
+.model-2 a:hover{background:#101010;text-shadow:0 0 #000000,1px 1px #000000,2px 2px #000000,3px 3px #000000,4px 4px #000000,5px 5px #000000,6px 6px #000000,7px 7px #000000,8px 8px #000000,9px 9px #000000,10px 10px #000000,11px 11px #000000,12px 12px #000000,13px 13px #000000,14px 14px #000000,15px 15px #000000,16px 16px #000000,17px 17px #000000,18px 18px #000000,19px 19px #000000,20px 20px #000000,21px 21px #000000,22px 22px #000000,23px 23px #000000,24px 24px #000000,25px 25px #000000,26px 26px #000000,27px 27px #000000,28px 28px #000000,29px 29px #000000,30px 30px #000}
+
+.model-2 .twitter{background:#00aced;text-shadow:0 0 #0087ba,1px 1px #0087ba,2px 2px #0087ba,3px 3px #0087ba,4px 4px #0087ba,5px 5px #0087ba,6px 6px #0087ba,7px 7px #0087ba,8px 8px #0087ba,9px 9px #0087ba,10px 10px #0087ba,11px 11px #0087ba,12px 12px #0087ba,13px 13px #0087ba,14px 14px #0087ba,15px 15px #0087ba,16px 16px #0087ba,17px 17px #0087ba,18px 18px #0087ba,19px 19px #0087ba,20px 20px #0087ba,21px 21px #0087ba,22px 22px #0087ba,23px 23px #0087ba,24px 24px #0087ba,25px 25px #0087ba,26px 26px #0087ba,27px 27px #0087ba,28px 28px #0087ba,29px 29px #0087ba,30px 30px #0087ba}
+
+.model-2 .twitter:hover{color:#00aced}
+
+.model-2 .facebook{background:#3b579d;text-shadow:0 0 #2d4278,1px 1px #2d4278,2px 2px #2d4278,3px 3px #2d4278,4px 4px #2d4278,5px 5px #2d4278,6px 6px #2d4278,7px 7px #2d4278,8px 8px #2d4278,9px 9px #2d4278,10px 10px #2d4278,11px 11px #2d4278,12px 12px #2d4278,13px 13px #2d4278,14px 14px #2d4278,15px 15px #2d4278,16px 16px #2d4278,17px 17px #2d4278,18px 18px #2d4278,19px 19px #2d4278,20px 20px #2d4278,21px 21px #2d4278,22px 22px #2d4278,23px 23px #2d4278,24px 24px #2d4278,25px 25px #2d4278,26px 26px #2d4278,27px 27px #2d4278,28px 28px #2d4278,29px 29px #2d4278,30px 30px #2d4278}
+
+.model-2 .facebook:hover{color:#3b579d}
+
+.model-2 .youtube{background:#ca1219;text-shadow:0 0 #ab1268,1px 1px #ab1268,2px 2px #ad0000,3px 3px #ad0000,4px 4px #ad0000,5px 5px #ad0000,6px 6px #ad0000,7px 7px #ad0000,8px 8px #ad0000,9px 9px #ad0000,10px 10px #ad0000,11px 11px #ad0000,12px 12px #ad0000,13px 13px #ad0000,14px 14px #ad0000,15px 15px #ad0000,16px 16px #ad0000,17px 17px #ad0000,18px 18px #ad0000,19px 19px #ad0000,20px 20px #ad0000,21px 21px #ad0000,22px 22px #ad0000,23px 23px #ad0000,24px 24px #ad0000,25px 25px #ad0000,26px 26px #ad0000,27px 27px #ad0000,28px 28px #ad0000,29px 29px #ad0000,30px 30px #ad0000}
+
+.model-2 .youtube:hover{color:#ca1219}
+
+.model-2 .instagram{background:#ca125f;text-shadow:0 0 #ab1268,1px 1px #ab1268,2px 2px #ab1268,3px 3px #ab1268,4px 4px #ab1268,5px 5px #ab1268,6px 6px #ab1268,7px 7px #ab1268,8px 8px #ab1268,9px 9px #ab1268,10px 10px #ab1268,11px 11px #ab1268,12px 12px #ab1268,13px 13px #ab1268,14px 14px #ab1268,15px 15px #ab1268,16px 16px #ab1268,17px 17px #ab1268,18px 18px #ab1268,19px 19px #ab1268,20px 20px #ab1268,21px 21px #ab1268,22px 22px #ab1268,23px 23px #ab1268,24px 24px #ab1268,25px 25px #ab1268,26px 26px #ab1268,27px 27px #ab1268,28px 28px #ab1268,29px 29px #ab1268,30px 30px #ab1268}
+
+.model-2 .instagram:hover{color:#ca125f}
+
+.model-2 .pinterest{background:#cb2026;text-shadow:0 0 #9f191e,1px 1px #9f191e,2px 2px #9f191e,3px 3px #9f191e,4px 4px #9f191e,5px 5px #9f191e,6px 6px #9f191e,7px 7px #9f191e,8px 8px #9f191e,9px 9px #9f191e,10px 10px #9f191e,11px 11px #9f191e,12px 12px #9f191e,13px 13px #9f191e,14px 14px #9f191e,15px 15px #9f191e,16px 16px #9f191e,17px 17px #9f191e,18px 18px #9f191e,19px 19px #9f191e,20px 20px #9f191e,21px 21px #9f191e,22px 22px #9f191e,23px 23px #9f191e,24px 24px #9f191e,25px 25px #9f191e,26px 26px #9f191e,27px 27px #9f191e,28px 28px #9f191e,29px 29px #9f191e,30px 30px #9f191e}
+
+.model-2 .pinterest:hover{color:#cb2026}
+
+.ads{overflow:hidden}
+
+#PopularPosts1{width:100%}
+
+.PopularPosts .widget-content ul{width:100%;padding:0;;margin:0;list-style-type:none;counter-reset:popcount;display: flex;flex-wrap: wrap;}
+
+.PopularPosts .widget-content ul li{width: 100% !important;padding:0;height:180px;overflow:hidden;position:relative;width:calc(50% - 5px);float:left;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;margin-top: 10px;}
+
+.PopularPosts .widget-content ul li a{color:#fff;text-decoration:none;font-size:18px;font-weight:500;}
+
+.PopularPosts .widget-content ul li:hover .item-title{bottom:0}
+
+.PopularPosts .widget-content ul li:hover img{-webkit-transform: scale(1.3);-ms-transform: scale(1.3);-o-transform: scale(1.3);transform: scale(1.3);}
+
+.PopularPosts .widget-content ul li img{width:100%;height:auto;padding-right:0;transition:all .6s ease-in-out;}
+
+.PopularPosts .item-thumbnail{float:none;margin:0 0 -4px}
+
+.PopularPosts .item-title{padding:5px;position:absolute;bottom:0px;left:0;right:0;text-align:left;background:rgba(0,0,0,.5);transition:all .3s ease-in-out;line-height: 1.3;letter-spacing: 0.5px;}
+
+.PopularPosts .item-thumbnail:before{content:none}
+
+.PopularPosts .widget-content ul li:hover .item-title a{color:#fff}
+
+.PopularPosts .widget-content ul li:hover .item-title{bottom:0px;background:#000}
+
+.PopularPosts .item-snippet{display:none}
+
+.grid-movie-post{padding:20px 10px;overflow:hidden;line-height:28px;font-size:$(fuente.size.contenido.entrada)!important}
+
+.grid-movie-post b{font-family:'Roboto',sans-serif;font-weight:600}
+
+.grid-movie-post p{padding:5px 0}
+
+.grid-movie-post p a:after{content:'';position:absolute;z-index:-1;width:100%;height:9%;left:0;bottom:0;background-color:$(color.texto.primary);transition:all ease .3s}
+
+.grid-movie-post p a:hover{color:#000}
+
+.grid-movie-post p a:hover:after{height:100%}
+
+blockquote{border-left:3px solid $(color.barra.blockquote);font-style:italic;line-height:1.6em;margin:12px;padding:1em 2em;background:#000}
+
+ul,li,ol{margin:revert;list-style-type:revert;padding:revert}
+
+.ads{background:#080808;height:85px;margin:0 10px 20px;text-align:center;display:flex;justify-content:center;align-items:center}
+
+.img-post{width:220px;margin:auto}
+
+.img-post img,.datos-post{width:100%;height:auto}
+
+.genero a:not(:last-child):after{content:" / ";color:#fff}
+
+.datos-post{padding:0 15px;display:flex;flex-direction:column;height:100%}
+
+.datos-post p{padding:10px 0}
+
+.datos-post h1,.grid-movie-post h1,.grid-movie-post h2,.grid-movie-post h3,.grid-movie-post h4,.grid-movie-post h5,.grid-movie-post h6{font-family:'Roboto',sans-serif;text-transform:uppercase;padding:20px 0 10px;font-weight:600}
+
+.datos-post h1{font-size:$(fuente.size.titulo.h1.entrada)!important;padding:0}
+
+.grid-movie-post h1{font-size:33px}
+
+.grid-movie-post h2{font-size:27px}
+
+.grid-movie-post h3{font-size:25px}
+
+.grid-movie-post h4{font-size:18px}
+
+.grid-movie-post h5{font-size:15px}
+
+.grid-movie-post h6{font-size:14px}
+
+.grid-movie-post.pagina-estatica h1{padding: 0;line-height: 35px;}
+
+.info-post{margin-bottom:10px;padding:20px 10px;display:flex;font-size:15px;font-family:'Roboto',sans-serif;align-items:end;text-transform:uppercase;flex-direction:row;height:280px}
+
+.info-post a{color:$(color.texto.primary)}
+
+.compartir-post{display:flex;align-items:center}
+
+.compartir-post a{display: flex;justify-content: center;align-items: center;}
+
+.compartir-post a i{padding:0 7px;font-size:20px;color:#fff}
+
+.compartir-post a:hover i{color:$(color.texto.primary)}
+
+.tags-post{display:flex;justify-content:space-between;flex-direction:column;font-weight:600;font-size:$(fuente.size.tagpost)!important}
+
+.post-footer{margin-top:30px}
+
+.share-post,.multiauthor-box{margin-bottom:50px}
+
+.share-post ul{padding:0;margin:0;text-align:center;display:flex;justify-content:center;align-items:center}
+
+.share-post li{list-style:none;display:inline-block;margin-right:10px;padding:0;font-weight:700;text-transform:uppercase}
+
+.share-post li:first-child{font-size:$(fuente.size.compartir.entrada)!important;color:#fff;font-family:'Roboto',sans-serif;font-weight:600}
+
+.share-post li a{display:block;text-align:center;cursor:pointer}
+
+.share-post span{display:none}
+
+.share-post li a i{display:block;color:#fff;width:48px;height:48px;line-height:50px;font-size:22px;border-radius:40px;font-weight:400;transition:all .3s}
+
+.share-post{width:90%;margin:25px auto;line-height:52px;min-height:52px}
+
+.share-post li a i.fa.fa-facebook{background:#3b5998;border:1px solid transparent}
+
+.share-post li a i.fa.fa-twitter{background:#19bfe5;border:1px solid transparent}
+
+.share-post li a i.fa.fa-linkedin{background:#069;border:1px solid transparent}
+
+.share-post li a i.fa.fa-pinterest{background:#cb2027;border:1px solid transparent}
+
+.share-post li a i.fa.fa-facebook:hover{background:#fff;color:#3b5998;border:1px solid #4666aa}
+
+.share-post li a i.fa.fa-twitter:hover{background:#fff;color:#19bfe5;border:1px solid #2acef4}
+
+.share-post li a i.fa.fa-google-plus:hover{background:#fff;color:#d64136;border:1px solid #e95247}
+
+.share-post li a i.fa.fa-linkedin:hover{background:#fff;color:#069;border:1px solid #017ab6}
+
+.share-post li a i.fa.fa-pinterest:hover{background:#fff;color:#cb2027;border:1px solid #e33239}
+
+.grid-movie.comentarios{display:block}
+
+.paginacion{margin:3em 0;display:flex;padding:0 10px}
+
+.paginacion .bton-paginacion{padding:11px;color:#000;text-decoration:none!important;text-transform:uppercase;border-radius:2px;font-family:'Roboto',sans-serif;font-weight:600;font-size:$(fuente.size.paginacion)}
+
+.paginacion .bton-right{float:right;margin-left:auto;margin-right:0}
+
+.paginacion .bton-paginacion:hover{color:$(color.texto.hover)}
+
+#error404{margin:30px auto;text-align:center}
+
+#error404 img{width:200px}
+
+.title-error{width:100%;max-width:450px;min-height:105px;background:#860000;margin:-5px auto 20px;padding:15px;border:1px solid #3c0000;text-align:center;font-size:16px}
+
+.title-error h1{font-family:'Roboto',sans-serif;font-size:30px}
+
+.title-error p{font-size:19px}
+
+.bg-footer{background:#0c0c0c;clear:both;position:relative;top:10px}
+
+#creditos{padding:10px;color:$(color.texto.claro);text-align:center;min-height:60px;display:flex;align-items:center;justify-content:space-between;letter-spacing:.4px;font-size:$(fuente.size.creditos)}
+
+.creditos-left{float:left;margin-right:auto;margin-left:0;order:1}
+
+#creditos-right{float:right;margin-left:auto;margin-right:0;order:2}
+
+#creditos ul{list-style:none;padding:0;margin:0;display:flex}
+
+#creditos li{padding:0 10px}
+
+#creditos a{color:$(color.texto.claro);text-decoration:none}
+
+#creditos a:hover{color:#ccc}
+
+@media (min-width: 2560px) {
+
+.cards__carousel-img,.cards__carousel-img img{height:250px}
+
+}
+
+@media (max-width: 1140px) {
+
+.container-movie .grid-movie {display: flex;flex-wrap: wrap;}
+
+.carousel__contenedor{overflow:hidden}
+
+}
+
+@media (min-width: 992px) {
+
+#Image1_img{margin-left:1rem}
+
+.cards__carousel-img{height:240px}
+
+.cards__carousel-img img{object-fit:fill;height:100%}
+
+.wjs-outsite{display:none}
+
+.boton__movil,#search__form-box{display:none}
+
+.dropdown-menu{flex-direction:row;margin:0 auto;padding:0}
+
+.dropdown-menu ul{top:0;left:100%;position:absolute;min-width:100%}
+
+.dropdown-menu a{white-space:nowrap}
+
+.dropdown-menu ul .is-parent &gt; a .is-arrow::after{border-left:4px dashed;border-right:0 transparent;border-top:4px solid transparent;border-bottom:4px solid transparent}
+
+.dropdown-menu li&gt;ul{visibility:hidden}
+
+.dropdown-menu li:hover&gt;ul{visibility:visible}
+
+.dropdown-menu &gt; li &gt; ul{top:90%;left:0}
+
+.dropdown-menu &gt; li:hover &gt; ul{top:100%;transition:top .3s;padding:0}
+
+.dropdown-menu &gt; li &gt; ul &gt; li &gt; ul{left:90%}
+
+.dropdown-menu &gt; li &gt; ul &gt; li:hover &gt; ul{left:100%;transition:left .3s;padding:0}
+
+#search__form-box{display:none!important}
+
+.movie-img{height:80%}
+
+.contenido__posts{float:left;width:73%;box-shadow:-20px -35px 20px -17px #000}
+
+.contenido__sidebar{float:right;box-shadow:20px -35px 20px -17px #000}
+
+.entradas-relacionadas .cards-movie{margin-bottom:-30px}
+
+}
+
+@media (max-width: 991px) {
+
+.compartir-post a{width: 48px;height: 48px;}
+
+.cabecera__logo{width:$(logo.size.tablet)}
+
+.comments .comments-content .datetime a{display:none}
+
+.bg-carousel{background:$(color.fondo.carousel.second);background:-moz-linear-gradient(top,$(color.fondo.carousel.primary) 0%,$(color.fondo.carousel.second) 100%);background:-webkit-linear-gradient(top,$(color.fondo.carousel.primary) 0%,$(color.fondo.carousel.second) 100%);background:linear-gradient(to bottom,$(color.fondo.carousel.primary) 0%,$(color.fondo.carousel.second) 100%)}
+
+.row-1{padding-top:13px}
+
+header{position:fixed;z-index:999999999;width:100%;top:0}
+
+.cabecera{display:flex;justify-content:space-between;padding:0 5px;height:70px}
+
+.cabecera__logo-img{width:90%}
+
+.cabecera__buscador{width:auto;margin-left:0}
+
+.cabecera__buscador-form{display:none}
+
+.boton__movil,#search__form-box{display:block}
+
+.boton__movil-icono{padding:14px 0;font-size:23px!important;border-radius:0;background:#000;color:$(color.texto.claro)}
+
+.search__form{align-items:center;height:100vh;justify-content:center;position:absolute;width:100%;display:none}
+
+#search__form-box{display:none;background:transparent;border:solid #fff;border-width:0 0 2px;color:#fff;font-size:2rem;height:2rem;outline:0;padding:2rem 1rem;position:fixed;z-index:99999999;max-width:80%}
+
+.bg-overlay,.bg-overlay-2{display:none;background-color:#000;opacity:.8;width:100%;height:100vh;position:fixed;z-index:9999999}
+
+.dropdown-menu{width:250px;height:100vh;position:absolute;left:0;background:#060606;margin-top:0;overflow-y:scroll;transition:left .4s ease;padding:0 0 105px!important}
+
+.dropdown-menu a{position:relative;background:transparent}
+
+.dropdown-menu ul{text-align:left;display:none;transition:top .3s}
+
+.dropdown-menu:not(.is-active){left:-100%;transition:left .4s ease}
+
+.dropdown-menu ul li:before{background:#000;content:"";position:absolute;width:100%;height:100%;border-left:3px solid $(btn.primary)}
+
+.dropdown-menu ul.is-active{display:block;top:100%;padding:0}
+
+.dropdown-menu li ul a{padding:15px 12px 15px 21px}
+
+.dropdown-menu li ul ul a{padding:15px 12px 15px 31px}
+
+.hamburger .menu-cierra,.boton__movil .btn-cerrar-search{display:none}
+
+.contenido{margin-top:60px!important;height:100%}
+
+.container-movie .grid-movie {display: flex;flex-wrap: wrap;}
+
+.contenido__sidebar .cards__carousel-img,.contenido__sidebar .cards__carousel-img img{height:380px;width:250px;margin:0 auto}
+
+.contenido__sidebar{padding:0 20px;width:60%;margin:auto}
+
+#creditos{flex-direction: column;justify-content: center;align-items: center;}
+
+#creditos-left{order: 2;}
+
+#creditos-right{order: 1;margin: auto;}
+
+.creditos-left,#creditos-right{float:none;padding:4px;display:flex;justify-content:center}
+
+#creditos ul{flex-wrap:wrap;justify-content:center}
+
+#creditos li{padding:0 5px}
+
+.info-post{display:flex;flex-direction:column;padding:30px 0 0;height:auto}
+
+.grid-movie-post{padding:0 15px 15px}
+
+}
+
+@media (max-width: 720px) {
+
+.container-movie .grid-movie {display: flex;flex-wrap: wrap;}
+
+.cards-movie { width: 33%;padding: 4px;}
+
+.contenido__sidebar{width:100%;margin:auto}
+
+}
+
+@media (max-width: 540px) {
+
+.cabecera__logo{width:$(logo.size.movil.small)}
+
+.carousel__siguiente,.carousel__anterior{display:none!important}
+
+.container-movie .grid-movie {display: flex;flex-wrap: wrap;}
+
+.cards-movie { width: 50%;padding: 4px;}
+
+.contenido__posts{padding:0}
+
+.datos-post h1{text-align:center}
+
+.share-post ul{flex-wrap:wrap}
+
+.share-post li:first-child{width:100%}
+
+}
+
+@media (max-width: 320px) {
+
+.container-movie .grid-movie {display: flex;flex-wrap: wrap;}
+
+.cards-movie{margin-bottom:10px}
+
+}
+
+@media (max-width: 767px) {
+
+.custom-shape-divider-bottom-1619034933 svg{width:calc(100% + 1.3px);height:50px}
+
+}
+
+
+
+]]&gt;&lt;/b:skin&gt;
+
+
+
+&lt;b:if cond='data:view.isLayoutMode'&gt;
+
+&lt;b:template-skin&gt;&lt;![CDATA[ 
+
+
+
+]]&gt;&lt;/b:template-skin&gt;
+
+&lt;/b:if&gt;
+
+
+
+&lt;/head&gt;
+
+
+
+&lt;body&gt;
+
+ &lt;!-- Cabecera --&gt;
+
+  &lt;header&gt; 
+
+    &lt;div class='cabecera-bg'&gt;
+
+      &lt;div class='cabecera'&gt;
+
+
+
+        &lt;span class='hamburger wjs-outsite' data-target='mn'&gt;
+
+          &lt;i aria-hidden='true' class='boton__movil-icono menu-abre fas fa-bars'/&gt;
+
+          &lt;i aria-hidden='true' class='boton__movil-icono menu-cierra fas fa-times'/&gt;
+
+        &lt;/span&gt;
+
+
+
+        &lt;div class='cabecera__logo'&gt;
+
+          &lt;a class='cabecera__logo-a' expr:href='data:blog.homepageUrl' expr:title='data:blog.title'&gt;
+
+                     &lt;b:section id='logo-cabecera' maxwidgets='1' name='Logo'&gt;
+                       &lt;b:widget id='Image1' locked='true' title='Logo' type='Image' version='1'&gt;
+                         &lt;b:widget-settings&gt;
+                           &lt;b:widget-setting name='displayUrl'&gt;https://cdn.discordapp.com/attachments/650729962961371137/959233740209528862/New_Project_1.webp&lt;/b:widget-setting&gt;
+                           &lt;b:widget-setting name='displayHeight'&gt;229&lt;/b:widget-setting&gt;
+                           &lt;b:widget-setting name='sectionWidth'&gt;1091&lt;/b:widget-setting&gt;
+                           &lt;b:widget-setting name='shrinkToFit'&gt;true&lt;/b:widget-setting&gt;
+                           &lt;b:widget-setting name='displayWidth'&gt;1091&lt;/b:widget-setting&gt;
+                           &lt;b:widget-setting name='link'&gt;false&lt;/b:widget-setting&gt;
+                           &lt;b:widget-setting name='caption'&gt;false&lt;/b:widget-setting&gt;
+                         &lt;/b:widget-settings&gt;
+                         &lt;b:includable id='main'&gt;
+
+  
+
+  &lt;b:include name='content'/&gt;
+
+&lt;/b:includable&gt;
+                         &lt;b:includable id='content'&gt;
+
+  &lt;div class='widget-content'&gt;
+
+    &lt;b:tag cond='data:link' expr:href='data:link' name='a'&gt;
+
+      &lt;img expr:alt='data:title' expr:height='data:height' expr:id='data:widget.instanceId + &amp;quot;_img&amp;quot;' expr:src='data:sourceUrl' expr:width='data:width'&gt;
+
+        &lt;b:attr cond='data:sourceSet' expr:value='data:sourceSet' name='srcset'/&gt;
+
+      &lt;/img&gt;
+
+    &lt;/b:tag&gt;
+
+  &lt;/div&gt;
+
+&lt;/b:includable&gt;
+                       &lt;/b:widget&gt;
+                     &lt;/b:section&gt;
+
+          &lt;/a&gt;
+
+        &lt;/div&gt; &lt;!-- cabecera__logo --&gt;
+
+
+
+
+
+        &lt;div class='cabecera__buscador'&gt;
+
+           &lt;form class='cabecera__buscador-form' expr:action='data:blog.searchUrl'&gt;
+
+            &lt;input autocomplete='off' class='cabecera__buscador-input' expr:value='data:view.isSearch ? data:view.search.query.escaped : &amp;quot;&amp;quot;' name='q' placeholder='Buscar' type='text'/&gt;
+
+            &lt;button aria-label='Search' class='cabecera__buscador-boton btn-primary animacion' type='submit'/&gt;
+
+          &lt;/form&gt;
+
+ 
+
+&lt;!-- search pc --&gt;
+
+                 
+
+
+
+          &lt;button aria-label='Search' class='boton__movil' type='submit'&gt;
+
+            &lt;i class='boton__movil-icono btn-lupa-search fas fa-search'/&gt;
+
+            &lt;i class='boton__movil-icono btn-cerrar-search fas fa-times'/&gt;
+
+          &lt;/button&gt;&lt;!-- boton search tablet --&gt;
+
+
+
+        &lt;/div&gt; &lt;!-- cabecera__buscador --&gt;
+
+      &lt;/div&gt; &lt;!-- cabecera --&gt;
+
+    &lt;/div&gt; &lt;!-- bg cabecera --&gt;
+
+
+
+
+
+        
+
+      &lt;!-- menu --&gt;
+
+    &lt;b:section id='BlogMenu1' locked='true' maxwidgets='1' name='Menu'&gt;
+      &lt;b:widget id='HTML1' locked='true' title='Menu' type='HTML' version='2' visible='true'&gt;
+        &lt;b:widget-settings&gt;
+          &lt;b:widget-setting name='content'&gt;&amp;lt;li&amp;gt;&amp;lt;a href=&amp;#39;URL&amp;#39;&amp;gt;peliculas&amp;lt;/a&amp;gt;
+
+&amp;lt;ul&amp;gt;
+
+&amp;lt;li&amp;gt;&amp;lt;a href=&amp;#39;https://www.pancimovies.ga/search/label/Acci%C3%B3n&amp;#39;&amp;gt;Acción&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+
+&amp;lt;li&amp;gt;&amp;lt;a href=&amp;#39;https://www.pancimovies.ga/search/label/Terror&amp;#39;&amp;gt;Terror&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+
+&amp;lt;li&amp;gt;&amp;lt;a href=&amp;#39;https://www.pancimovies.ga/search/label/Aventura&amp;#39;&amp;gt;Aventura&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+
+
+&amp;lt;li&amp;gt;&amp;lt;a href=&amp;#39;https://www.pancimovies.ga/search/label/Ciencia%20Ficci%C3%B3n&amp;#39;&amp;gt;Ciencia Ficcion&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+
+&amp;lt;li&amp;gt;&amp;lt;a href=&amp;#39;URL&amp;#39;&amp;gt;otros&amp;lt;/a&amp;gt;
+
+&amp;lt;ul&amp;gt;
+
+&amp;lt;li&amp;gt;&amp;lt;a href=&amp;#39;https://www.pancimovies.ga/search/label/Familiar&amp;#39;&amp;gt;Familiar&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+
+&amp;lt;li&amp;gt;&amp;lt;a href=&amp;#39;https://www.pancimovies.ga/search/label/Comedia&amp;#39;&amp;gt;Comedia&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+
+&amp;lt;li&amp;gt;&amp;lt;a href=&amp;#39;https://www.pancimovies.ga/search/label/Animaci%C3%B3n&amp;#39;&amp;gt;Animacion&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+
+&amp;lt;li&amp;gt;&amp;lt;a href=&amp;#39;https://www.pancimovies.ga/search/label/Romance&amp;#39;&amp;gt;Romance&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+
+&amp;lt;li&amp;gt;&amp;lt;a href=&amp;#39;https://www.pancimovies.ga/search/label/Fantas%C3%ADa&amp;#39;&amp;gt;fantasia&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+
+&amp;lt;li&amp;gt;&amp;lt;a href=&amp;#39;https://www.pancimovies.ga/search/label/Documental&amp;#39;&amp;gt;documental&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+
+
+&amp;lt;ul&amp;gt;
+
+&amp;lt;/ul&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;/li&amp;gt;
+
+
+&amp;lt;ul&amp;gt;
+
+&amp;lt;/ul&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;/li&amp;gt;
+
+&amp;lt;li&amp;gt;&amp;lt;a href=&amp;#39;URL&amp;#39;&amp;gt;editoras&amp;lt;/a&amp;gt;
+
+&amp;lt;ul&amp;gt;
+
+&amp;lt;li&amp;gt;&amp;lt;a href=&amp;#39;https://www.pancimovies.ga/search/label/Marvel%20Comics&amp;#39;&amp;gt;Marvel&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+
+&amp;lt;li&amp;gt;&amp;lt;a href=&amp;#39;https://pancimovies.blogspot.com/search/label/DC&amp;#39;&amp;gt;DC&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+
+
+
+&amp;lt;/ul&amp;gt;&amp;lt;/li&amp;gt;
+
+&amp;lt;li&amp;gt;&amp;lt;a href=&amp;#39;https://pancimovies.blogspot.com/search/label/anime&amp;#39;&amp;gt;Anime&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+
+&amp;lt;li&amp;gt;&amp;lt;a href=&amp;#39;https://www.pancimovies.ga/search/label/Tv%20en%20linea&amp;#39;&amp;gt;TV en linea&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+
+&amp;lt;li&amp;gt;&amp;lt;a href=&amp;#39;https://panciseries2022.blogspot.com/&amp;#39;&amp;gt;Series&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+
+&amp;lt;li&amp;gt;&amp;lt;a href=&amp;#39;https://archive.org/download/panci-movies/PanciMovies.apk&amp;#39;&amp;gt;Descarga la APP&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/b:widget-setting&gt;
+        &lt;/b:widget-settings&gt;
+        &lt;b:includable id='main'&gt;
+
+                      &lt;div class='widget-content'&gt;
+
+                        &lt;nav class='wjs-menu'&gt;
+
+                          &lt;ul class='dropdown-menu' id='mn'&gt; 
+
+                              &lt;data:content/&gt;
+
+                          &lt;/ul&gt;
+
+                        &lt;/nav&gt;
+
+                      &lt;/div&gt;
+
+                    &lt;/b:includable&gt;
+      &lt;/b:widget&gt;
+    &lt;/b:section&gt;&lt;!-- fin menu --&gt;
+
+      
+
+  &lt;/header&gt;&lt;!-- Fin Cabecera --&gt;
+
+  
+
+    &lt;form class='search__form' expr:action='data:blog.searchUrl'&gt;
+
+      &lt;input autocomplete='off' autofocus='autofocus' expr:value='data:view.isSearch ? data:view.search.query.escaped : &amp;quot;&amp;quot;' id='search__form-box' name='q' placeholder='Buscar...' type='search'/&gt;
+
+    &lt;/form&gt;  
+
+    &lt;div class='bg-overlay animacion'/&gt;
+
+    &lt;div class='bg-overlay-2 animacion'/&gt;
+
+  
+
+
+
+&lt;main class='contenido'&gt;&lt;!-- contenido --&gt;
+
+      &lt;section class='row-1'&gt;
+
+          &lt;b:section id='Blog' maxwidgets='1' name='Main Posts' showaddelement='yes'&gt;
+            &lt;b:widget id='Blog1' locked='true' title='Entradas del blog' type='Blog' version='2' visible='true'&gt;
+              &lt;b:widget-settings&gt;
+                &lt;b:widget-setting name='showDateHeader'&gt;false&lt;/b:widget-setting&gt;
+                &lt;b:widget-setting name='commentLabel'&gt;comments&lt;/b:widget-setting&gt;
+                &lt;b:widget-setting name='style.textcolor'&gt;#ffffff&lt;/b:widget-setting&gt;
+                &lt;b:widget-setting name='showShareButtons'&gt;true&lt;/b:widget-setting&gt;
+                &lt;b:widget-setting name='showCommentLink'&gt;true&lt;/b:widget-setting&gt;
+                &lt;b:widget-setting name='style.urlcolor'&gt;#ffffff&lt;/b:widget-setting&gt;
+                &lt;b:widget-setting name='showAuthor'&gt;false&lt;/b:widget-setting&gt;
+                &lt;b:widget-setting name='style.linkcolor'&gt;#ffffff&lt;/b:widget-setting&gt;
+                &lt;b:widget-setting name='style.unittype'&gt;TextAndImage&lt;/b:widget-setting&gt;
+                &lt;b:widget-setting name='style.bgcolor'&gt;#ffffff&lt;/b:widget-setting&gt;
+                &lt;b:widget-setting name='timestampLabel'/&gt;
+                &lt;b:widget-setting name='reactionsLabel'/&gt;
+                &lt;b:widget-setting name='showAuthorProfile'&gt;false&lt;/b:widget-setting&gt;
+                &lt;b:widget-setting name='style.layout'&gt;1x1&lt;/b:widget-setting&gt;
+                &lt;b:widget-setting name='showLabels'&gt;true&lt;/b:widget-setting&gt;
+                &lt;b:widget-setting name='showLocation'&gt;false&lt;/b:widget-setting&gt;
+                &lt;b:widget-setting name='postLabelsLabel'/&gt;
+                &lt;b:widget-setting name='showTimestamp'&gt;false&lt;/b:widget-setting&gt;
+                &lt;b:widget-setting name='postsPerAd'&gt;1&lt;/b:widget-setting&gt;
+                &lt;b:widget-setting name='showBacklinks'&gt;false&lt;/b:widget-setting&gt;
+                &lt;b:widget-setting name='style.bordercolor'&gt;#ffffff&lt;/b:widget-setting&gt;
+                &lt;b:widget-setting name='showInlineAds'&gt;false&lt;/b:widget-setting&gt;
+                &lt;b:widget-setting name='showReactions'&gt;false&lt;/b:widget-setting&gt;
+              &lt;/b:widget-settings&gt;
+              &lt;b:includable id='main'&gt;
+
+              
+
+      
+
+    &lt;section class='carousel-post'&gt;
+
+   
+
+       &lt;b:include name='Carousel'/&gt;
+
+
+
+           &lt;section class='contenido__posts'&gt; &lt;!-- Entradas --&gt;
+
+
+
+               &lt;b:if cond='data:view.isError'&gt;
+
+                 &lt;b:include name='Error404'/&gt;
+
+               &lt;b:else/&gt;
+
+
+
+               &lt;section class='container-movie'&gt;
+
+
+
+                   &lt;b:if cond='data:view.isMultipleItems'&gt;
+
+                   &lt;b:if cond='!data:blog.searchLabel'&gt;
+
+                   &lt;b:if cond='data:blog.url == data:blog.homepageUrl'&gt;
+
+                   &lt;div class='titulo-seccion'&gt;
+
+                   &lt;h3&gt;Últimas peliculas&lt;/h3&gt;
+
+                   &lt;a class='titulo-seccion-link animacion' href='/search'&gt;Ver más&lt;/a&gt;
+
+                   &lt;/div&gt;
+
+                   &lt;/b:if&gt;
+
+                   &lt;/b:if&gt;
+
+                   &lt;/b:if&gt;
+
+
+
+
+
+                   &lt;b:if cond='data:view.isMultipleItems'&gt;
+
+                   &lt;div class='grid-movie'&gt;
+
+                       &lt;b:include name='NadaEncontrado'/&gt;&lt;!-- Include Sin Resultados --&gt;
+
+                       &lt;b:loop values='data:posts' var='post'&gt;
+
+                       &lt;b:include data='post' name='post'/&gt;&lt;!-- Include posts --&gt;
+
+                       &lt;/b:loop&gt;
+
+                   &lt;/div&gt;&lt;!-- grid-movie --&gt;
+
+
+
+                      &lt;b:include name='postPagination'/&gt;&lt;!-- Include pagination --&gt;
+
+                   &lt;b:else/&gt;
+
+
+
+                       &lt;b:loop values='data:posts' var='post'&gt;
+
+                       &lt;b:include data='post' name='post'/&gt;&lt;!-- Include posts --&gt;
+
+                       &lt;b:include data='post' name='comments'/&gt;&lt;!-- Include comments --&gt;
+
+                       &lt;/b:loop&gt;
+
+                   &lt;/b:if&gt;
+
+
+
+                &lt;/section&gt;&lt;!-- container-movie --&gt;   
+
+           &lt;/b:if&gt;&lt;!-- 404 --&gt;
+
+       &lt;/section&gt; &lt;!-- Fin Entradas --&gt;
+
+   &lt;/section&gt;&lt;!-- carousel-post --&gt;
+
+          &lt;/b:includable&gt;
+              &lt;b:includable id='Carousel'&gt;
+
+  &lt;b:if cond='data:blog.url == data:blog.homepageUrl'&gt; 
+
+  &lt;section class='carousel-homepage'&gt;      
+
+  &lt;!--{{ Carousel }}--&gt;
+
+  &lt;div class='bg-carousel'&gt;
+
+  &lt;section class='carousel'&gt;
+
+  &lt;div class='carousel__contenedor'&gt;
+
+  
+
+  &lt;button aria-label='Anterior' class='carousel__anterior animacion'&gt;
+
+  &lt;i class='fa fa-chevron-left'/&gt;
+
+  &lt;/button&gt;
+
+
+
+  &lt;div class='carousel__lista'&gt; 
+
+  &lt;b:loop values='data:posts' var='post'&gt;     
+
+  &lt;div class='cards__carousel'&gt;
+
+  &lt;div class='cards__carousel-img'&gt;
+
+  &lt;img expr:alt='data:post.title' expr:src='resizeImage(data:post.featuredImage, 400)' expr:title='data:post.title'/&gt;
+
+  &lt;i aria-hidden='true' class='fa fa-play-circle'/&gt;
+
+  &lt;a expr:href='data:post.url' expr:title='data:post.title'/&gt;
+
+  &lt;/div&gt;
+
+  &lt;div class='cards__carousel-titulo'&gt;
+
+  &lt;a expr:href='data:post.url' expr:title='data:post.title'&gt;
+
+  &lt;h3&gt;&lt;data:post.title/&gt;&lt;/h3&gt;
+
+  &lt;/a&gt;
+
+  &lt;/div&gt;
+
+  &lt;/div&gt; 
+
+  &lt;/b:loop&gt;
+
+  &lt;/div&gt;
+
+   
+
+  &lt;button aria-label='Siguiente' class='carousel__siguiente animacion'&gt;
+
+  &lt;i class='fa fa-chevron-right'/&gt;
+
+  &lt;/button&gt;
+
+
+
+  &lt;/div&gt;&lt;!-- carousel contenedor --&gt;
+
+  &lt;/section&gt; &lt;!-- carousel --&gt;
+
+  &lt;/div&gt;&lt;!-- bg carousel --&gt;
+
+  &lt;div class='custom-shape-divider-bottom-1619034933'&gt;
+
+  &lt;svg data-name='Layer 1' preserveAspectRatio='none' viewBox='0 0 1200 120' xmlns='http://www.w3.org/2000/svg'&gt;
+
+  &lt;path class='shape-fill' d='M598.97 114.72L0 0 0 120 1200 120 1200 0 598.97 114.72z'/&gt;
+
+  &lt;/svg&gt;
+
+  &lt;/div&gt;  
+
+  &lt;/section&gt;&lt;!-- carousel-homepage --&gt;    
+
+  
+
+   &lt;/b:if&gt;  
+
+   &lt;/b:includable&gt;
+              &lt;b:includable id='Error404'&gt;
+
+                &lt;div id='error404'&gt;
+
+                &lt;img alt='ERROR' src='https://1.bp.blogspot.com/-XHCa3k63Qxo/YNunVhkbCuI/AAAAAAAAKrk/-tg93qgz_zosNmu8Rm7R5KfVePmJ99QRACLcBGAsYHQ/s16000/error-pelicula.png' title='error'/&gt;
+
+                &lt;div class='title-error'&gt;
+
+                &lt;h1&gt;&amp;#161;Ops un error!&lt;/h1&gt;
+
+                &lt;p&gt;La página que intentas acceder no existe :(&lt;/p&gt;
+
+                &lt;/div&gt;
+
+                &lt;div class='text-center'&gt; 
+
+                &lt;a href='/' style='color: #fff;font-family: &amp;apos;Roboto&amp;apos;;text-transform: uppercase;' title='Ir al Inicio'&gt;
+
+                &lt;i class='fas fa-home'/&gt;
+
+                Regresar al Inicio
+
+                &lt;/a&gt;
+
+                &lt;/div&gt;
+
+                &lt;/div&gt;
+
+              &lt;/b:includable&gt;
+              &lt;b:includable id='NadaEncontrado'&gt;
+
+                &lt;b:if cond='data:numPosts == 0'&gt;
+
+                  &lt;p class='p'&gt;Lo sentimos no hay resultados, intenta con otro termino.&lt;/p&gt; 
+
+                  &lt;/b:if&gt; 
+
+               &lt;/b:includable&gt;
+              &lt;b:includable id='aboutPostAuthor'&gt;&lt;!-- disable --&gt;&lt;/b:includable&gt;
+              &lt;b:includable id='addComments'&gt;&lt;!-- disable --&gt;&lt;/b:includable&gt;
+              &lt;b:includable id='blogThisShare'&gt;
+
+        &lt;b:with value='&amp;quot;window.open(this.href, \&amp;quot;_blank\&amp;quot;, \&amp;quot;height=270,width=475\&amp;quot;); return false;&amp;quot;' var='onclick'&gt;
+
+          &lt;b:include name='platformShare'/&gt;
+
+        &lt;/b:with&gt;
+
+      &lt;/b:includable&gt;
+              &lt;b:includable id='bylineByName' var='byline'&gt;
+
+        &lt;b:switch var='data:byline.name'&gt;
+
+        &lt;b:case value='share'/&gt;
+
+          &lt;b:include cond='data:post.shareUrl' name='postShareButtons'/&gt;
+
+        &lt;b:case value='comments'/&gt;
+
+          &lt;b:include cond='data:post.allowComments' name='postCommentsLink'/&gt;
+
+        &lt;b:case value='location'/&gt;
+
+          &lt;b:include cond='data:post.location' name='postLocation'/&gt;
+
+        &lt;b:case value='timestamp'/&gt;
+
+          &lt;b:include cond='not data:view.isPage' name='postTimestamp'/&gt;
+
+        &lt;b:case value='author'/&gt;
+
+          &lt;b:include name='postAuthor'/&gt;
+
+        &lt;b:case value='labels'/&gt;
+
+          &lt;b:include cond='data:post.labels' name='postLabels'/&gt;
+
+        &lt;b:case value='icons'/&gt;
+
+          &lt;b:include cond='data:post.emailPostUrl' name='emailPostIcon'/&gt;
+
+        &lt;/b:switch&gt;
+
+      &lt;/b:includable&gt;
+              &lt;b:includable id='bylineRegion' var='regionItems'&gt;
+
+        &lt;b:loop values='data:regionItems' var='byline'&gt;
+
+          &lt;b:include data='byline' name='bylineByName'/&gt;
+
+        &lt;/b:loop&gt;
+
+      &lt;/b:includable&gt;
+              &lt;b:includable id='commentAuthorAvatar'&gt;&lt;!-- disable --&gt;&lt;/b:includable&gt;
+              &lt;b:includable id='commentDeleteIcon' var='comment'&gt;&lt;!-- disable --&gt;&lt;/b:includable&gt;
+              &lt;b:includable id='commentForm' var='post'&gt;&lt;!-- disable --&gt;&lt;/b:includable&gt;
+              &lt;b:includable id='commentFormIframeSrc' var='post'&gt;&lt;!-- disable --&gt;&lt;/b:includable&gt;
+              &lt;b:includable id='commentItem' var='comment'&gt;&lt;!-- disable --&gt;&lt;/b:includable&gt;
+              &lt;b:includable id='commentList' var='comments'&gt;&lt;!-- disable --&gt;&lt;/b:includable&gt;
+              &lt;b:includable id='commentPicker' var='post'&gt;
+
+            &lt;div class='comments' id='comments'&gt;
+
+              &lt;div class='titulo-seccion' style='padding:15px 0px;margin: 0;'&gt;&lt;!-- mensaje de comentario --&gt;
+
+                &lt;h3 class='titulo-seccion-post'&gt;
+
+                Comentarios
+
+                &lt;/h3&gt;
+
+                &lt;/div&gt;
+
+               &lt;b:class cond='!data:post.allowNewComments' name='noAllowNewComments'/&gt;
+
+ 
+
+               &lt;div class='comments-content'&gt;
+
+                  &lt;div id='comment-holder'&gt;&lt;data:post.commentHtml/&gt;&lt;/div&gt;
+
+                  &lt;b:include data='post' name='threadedCommentJs'/&gt;
+
+               &lt;/div&gt;
+
+               &lt;b:include data='post' expr:name='data:post.allowNewComments ? &amp;quot;threadedCommentForm&amp;quot; : &amp;quot;status-message&amp;quot;'/&gt;
+
+            &lt;/div&gt;
+
+          &lt;/b:includable&gt;
+              &lt;b:includable id='comments' var='post'&gt;
+
+            &lt;b:if cond='data:post.allowComments'&gt;
+
+               &lt;b:include data='post' expr:name='data:view.isPreview ? &amp;quot;status-message&amp;quot; : &amp;quot;comments-&amp;quot; + data:skin.vars.config_comments'/&gt;
+
+            &lt;/b:if&gt;
+
+          &lt;/b:includable&gt;
+              &lt;b:includable id='comments-blogger' var='post'&gt;
+
+            &lt;b:include data='post' name='commentPicker'/&gt;
+
+          &lt;/b:includable&gt;
+              &lt;b:includable id='comments-disqus' var='post'&gt;
+
+            &lt;div id='disqus_thread'/&gt;
+
+            &lt;script&gt;
+
+            var disqus_shortname = &amp;quot;&lt;data:skin.vars.config_shortname/&gt;&amp;quot;,
+
+                disqus_config = function(){
+
+                   this.page.url = &amp;quot;&lt;data:view.url.canonical/&gt;&amp;quot;;
+
+                   this.page.title = &amp;quot;&lt;data:view.title.escaped/&gt;&amp;quot;;
+
+                };//&lt;![CDATA[
+
+             (function() {
+
+                 var d = document, s = d.createElement('script');
+
+                 s.async = true;s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+
+                 s.setAttribute('data-timestamp', +new Date());(d.head || d.body).appendChild(s);
+
+             })();//]]&gt;
+
+             &lt;/script&gt;
+
+          &lt;/b:includable&gt;
+              &lt;b:includable id='comments-facebook' var='post'&gt;
+
+            &lt;div class='fb-comments' data-colorscheme='light' data-numposts='10' data-width='100%' expr:data-href='data:view.url.canonical'/&gt;
+
+          &lt;/b:includable&gt;
+              &lt;b:includable id='commentsLink'&gt;
+
+        &lt;a class='comment-link' expr:href='data:post.commentsUrl' expr:onclick='data:post.commentsUrlOnclick'&gt;
+
+          &lt;b:if cond='data:post.numberOfComments &amp;gt; 0'&gt;
+
+            &lt;b:message name='messages.numberOfComments'&gt;
+
+              &lt;b:param expr:value='data:post.numberOfComments' name='numComments'/&gt;
+
+            &lt;/b:message&gt;
+
+          &lt;b:else/&gt;
+
+            &lt;data:messages.postAComment/&gt;
+
+          &lt;/b:if&gt;
+
+        &lt;/a&gt;
+
+      &lt;/b:includable&gt;
+              &lt;b:includable id='commentsLinkIframe'&gt;
+
+        &lt;!-- G+ comments, no longer available. The includable is retained for backwards-compatibility. --&gt;
+
+      &lt;/b:includable&gt;
+              &lt;b:includable id='commentsTitle'&gt;&lt;!-- disable --&gt;&lt;/b:includable&gt;
+              &lt;b:includable id='defaultAdUnit'&gt;
+
+        &lt;ins class='adsbygoogle' data-ad-format='auto' expr:data-ad-client='data:adClientId ?: data:blog.adsenseClientId' expr:data-ad-host='data:blog.adsenseHostId' expr:data-analytics-uacct='data:blog.analyticsAccountNumber' expr:style='data:style ?: &amp;quot;display: block;&amp;quot;'/&gt;
+
+        &lt;script&gt;
+
+         (adsbygoogle = window.adsbygoogle || []).push({});
+
+        &lt;/script&gt;
+
+      &lt;/b:includable&gt;
+              &lt;b:includable id='emailPostIcon'&gt;
+
+        &lt;span class='byline post-icons'&gt;
+
+          &lt;!-- email post links --&gt;
+
+          &lt;span class='item-action'&gt;
+
+            &lt;a expr:href='data:post.emailPostUrl' expr:title='data:messages.emailPost'&gt;
+
+              &lt;b:include data='{ iconClass: &amp;quot;touch-icon sharing-icon&amp;quot; }' name='emailIcon'/&gt;
+
+            &lt;/a&gt;
+
+          &lt;/span&gt;
+
+        &lt;/span&gt;
+
+      &lt;/b:includable&gt;
+              &lt;b:includable id='facebookShare'&gt;
+
+        &lt;b:with value='&amp;quot;window.open(this.href, \&amp;quot;_blank\&amp;quot;, \&amp;quot;height=430,width=640\&amp;quot;); return false;&amp;quot;' var='onclick'&gt;
+
+          &lt;b:include name='platformShare'/&gt;
+
+        &lt;/b:with&gt;
+
+      &lt;/b:includable&gt;
+              &lt;b:includable id='feedLinks'&gt;&lt;!-- disable --&gt;&lt;/b:includable&gt;
+              &lt;b:includable id='feedLinksBody' var='links'&gt;&lt;!-- disable --&gt;&lt;/b:includable&gt;
+              &lt;b:includable id='footerBylines'&gt;
+
+        &lt;b:if cond='data:widgets.Blog.first.footerBylines'&gt;
+
+          &lt;b:loop index='i' values='data:widgets.Blog.first.footerBylines' var='region'&gt;
+
+            &lt;b:if cond='not data:region.items.empty'&gt;
+
+              &lt;div expr:class='&amp;quot;post-footer-line post-footer-line-&amp;quot; + (data:i + 1)'&gt;
+
+                &lt;b:with value='&amp;quot;footer-&amp;quot; + (data:i + 1)' var='regionName'&gt;
+
+                  &lt;b:include data='region.items' name='bylineRegion'/&gt;
+
+                &lt;/b:with&gt;
+
+              &lt;/div&gt;
+
+            &lt;/b:if&gt;
+
+          &lt;/b:loop&gt;
+
+        &lt;/b:if&gt;
+
+      &lt;/b:includable&gt;
+              &lt;b:includable id='googlePlusShare'&gt;
+
+        &lt;div class='goog-inline-block google-plus-share-container'&gt;
+
+          &lt;g:plusone annotation='inline' expr:href='data:originalUrl.canonical.http' size='medium' source='blogger:blog:plusone'/&gt;
+
+        &lt;/div&gt;
+
+      &lt;/b:includable&gt;
+              &lt;b:includable id='headerByline'&gt;
+
+        &lt;b:if cond='data:widgets.Blog.first.headerByline'&gt;
+
+          &lt;div class='post-header'&gt;
+
+            &lt;div class='post-header-line-1'&gt;
+
+              &lt;b:with value='&amp;quot;header-1&amp;quot;' var='regionName'&gt;
+
+                &lt;b:include data='data:widgets.Blog.first.headerByline.items' name='bylineRegion'/&gt;
+
+              &lt;/b:with&gt;
+
+            &lt;/div&gt;
+
+          &lt;/div&gt;
+
+        &lt;/b:if&gt;
+
+      &lt;/b:includable&gt;
+              &lt;b:includable id='homePageLink'&gt;&lt;!-- disable --&gt;&lt;/b:includable&gt;
+              &lt;b:includable id='iframeComments' var='post'&gt;&lt;!-- disable --&gt;&lt;/b:includable&gt;
+              &lt;b:includable id='inlineAd' var='post'&gt;&lt;!-- disable --&gt;&lt;/b:includable&gt;
+              &lt;b:includable id='linkShare'&gt;
+
+        &lt;b:with value='&amp;quot;window.prompt(\&amp;quot;Copy to clipboard: Ctrl+C, Enter\&amp;quot;, \&amp;quot;&amp;quot; + data:originalUrl + &amp;quot;\&amp;quot;); return false;&amp;quot;' var='onclick'&gt;
+
+          &lt;b:include name='platformShare'/&gt;
+
+        &lt;/b:with&gt;
+
+      &lt;/b:includable&gt;
+              &lt;b:includable id='manageComments'&gt;
+
+        &lt;a expr:href='data:post.manageCommentsUrl' expr:onclick='data:post.manageCommentsUrlOnclick'&gt;
+
+          &lt;b:message name='messages.manageComments'/&gt;
+
+        &lt;/a&gt;
+
+      &lt;/b:includable&gt;
+              &lt;b:includable id='nextPageLink'&gt;
+
+            &lt;a expr:href='data:olderPageUrl'&gt;&lt;data:messages.older/&gt;&lt;/a&gt;
+
+          &lt;/b:includable&gt;
+              &lt;b:includable id='otherSharingButton'&gt;
+
+        &lt;span class='sharing-platform-button sharing-element-other' expr:aria-label='data:messages.shareToOtherApps.escaped' expr:data-url='data:originalUrl' expr:title='data:messages.shareToOtherApps.escaped' role='menuitem' tabindex='-1'&gt;
+
+          &lt;b:with value='{key: &amp;quot;sharingOther&amp;quot;}' var='platform'&gt;
+
+            &lt;b:include name='sharingPlatformIcon'/&gt;
+
+          &lt;/b:with&gt;
+
+          &lt;span class='platform-sharing-text'&gt;&lt;data:messages.shareOtherApps.escaped/&gt;&lt;/span&gt;
+
+        &lt;/span&gt;
+
+      &lt;/b:includable&gt;
+              &lt;b:includable id='platformShare'&gt;
+
+        &lt;a expr:class='&amp;quot;goog-inline-block sharing-&amp;quot; + data:platform.key' expr:data-url='data:originalUrl' expr:href='data:shareUrl + &amp;quot;&amp;amp;target=&amp;quot; + data:platform.target' expr:onclick='data:onclick ? data:onclick : &amp;quot;&amp;quot;' expr:title='data:platform.shareMessage' target='_blank'&gt;
+
+          &lt;span class='share-button-link-text'&gt;
+
+            &lt;data:platform.shareMessage/&gt;
+
+          &lt;/span&gt;
+
+        &lt;/a&gt;
+
+      &lt;/b:includable&gt;
+              &lt;b:includable id='post' var='post'&gt;
+
+
+
+            &lt;b:if cond='data:view.isMultipleItems'&gt;&lt;!--{{ Pagina de inicio }}--&gt; 
+
+              &lt;div class='cards-movie'&gt;
+
+                 &lt;div class='movie-img'&gt;
+
+                    &lt;b:if cond='data:post.featuredImage'&gt;
+
+                       &lt;img expr:alt='data:post.title' expr:src='resizeImage(data:post.featuredImage, 360)' expr:title='data:post.title'/&gt;
+
+                      &lt;b:else/&gt;
+
+                      &lt;img src='https://1.bp.blogspot.com/-HKIbgJHTDEQ/XWlqMXSdE5I/AAAAAAAAGTU/6oAnfBjV6xUyqOwN9wS4BkUIaR9iAcW4gCLcBGAs/s320/blank_product.png'/&gt;
+
+                      &lt;/b:if&gt;
+
+                       &lt;i aria-hidden='true' class='fa fa-play-circle'/&gt;
+
+                        &lt;a expr:href='data:post.url' expr:title='data:post.title'/&gt;
+
+                 &lt;/div&gt;
+
+                 &lt;div class='movie-titulo'&gt;
+
+                 &lt;a expr:href='data:post.url' expr:title='data:post.title'&gt;
+
+                   &lt;h2&gt;&lt;data:post.title/&gt;&lt;/h2&gt;
+
+                 &lt;/a&gt;
+
+                &lt;/div&gt;
+
+               &lt;/div&gt;
+
+
+
+
+
+            &lt;b:elseif cond='data:view.isPost'/&gt;&lt;!--{{ Entradas individuales }}--&gt;
+
+
+
+                &lt;div class='info-post'&gt;
+
+                  &lt;div class='img-post'&gt;
+
+                    &lt;img expr:alt='data:post.title' expr:src='resizeImage(data:post.featuredImage, 400)' height='auto' width='100%'/&gt;
+
+                  &lt;/div&gt;
+
+                  &lt;div class='datos-post'&gt;
+
+                    &lt;h1&gt;&lt;data:post.title/&gt;&lt;/h1&gt;
+
+                    &lt;div class='tags-post'&gt;
+
+                    &lt;p class='genero'&gt;
+
+                    Género: 
+
+
+
+                &lt;b:if cond='data:post.labels'&gt;
+
+                          &lt;data:postLabelsLabel/&gt;
+
+                          &lt;b:loop values='data:post.labels' var='label'&gt;
+
+                            &lt;a expr:href='data:label.url' rel='tag'&gt;&lt;data:label.name/&gt;&lt;/a&gt;
+
+                          &lt;/b:loop&gt;
+
+                        &lt;/b:if&gt;
+
+
+
+                    &lt;/p&gt;
+
+
+
+                    &lt;p class='compartir-post'&gt;
+
+                    &lt;span&gt;Compartir:&lt;/span&gt;
+
+                    &lt;a aria-label='Twitter' class='twitter' expr:href='&amp;quot;http://twitter.com/share?url=&amp;quot; + data:post.url + &amp;quot;&amp;amp;title=&amp;quot; + data:post.title' onclick='window.open(this.href, &amp;apos;windowName&amp;apos;, &amp;apos;width=550, height=600, left=24, top=24, scrollbars, resizable&amp;apos;); return false;' rel='noopener' target='_blank' title='Twitter'&gt;
+
+                    &lt;i class='fa fa-twitter'/&gt;&lt;/a&gt;
+
+                    &lt;a aria-label='Facebook2' class='facebook' expr:href='&amp;quot;http://www.facebook.com/sharer.php?u=&amp;quot; + data:post.url + &amp;quot;&amp;amp;title=&amp;quot;+ data:post.title' onclick='window.open(this.href, &amp;apos;windowName&amp;apos;, &amp;apos;width=550, height=600, left=24, top=24, scrollbars, resizable&amp;apos;); return false;' rel='noopener' target='_blank' title='Facebook'&gt;
+
+                    &lt;i class='fa fa-facebook'/&gt;&lt;/a&gt;
+
+                    &lt;a aria-label='Pinterest' class='pinterest' expr:href='&amp;quot;http://pinterest.com/pin/create/button/?url=&amp;quot; + data:post.url + &amp;quot;&amp;amp;media=&amp;quot; + data:post.thumbnailUrl + &amp;quot;&amp;amp;description=&amp;quot; + data:post.snippet' onclick='window.open(this.href, &amp;apos;windowName&amp;apos;, &amp;apos;width=550, height=600, left=24, top=24, scrollbars, resizable&amp;apos;); return false;' rel='noopener' title='Pinterest'&gt;
+
+                    &lt;i class='fa fa-pinterest'/&gt;&lt;/a&gt;
+
+                    &lt;/p&gt;
+
+                  &lt;/div&gt;
+
+
+
+                &lt;/div&gt;
+
+                &lt;/div&gt;
+
+                &lt;div class='grid-movie-post'&gt;
+
+                  &lt;div class='grid-movie-post-one'&gt;
+
+                     &lt;data:post.body/&gt;
+
+                  &lt;/div&gt;&lt;!-- grid-movie-post --&gt;
+
+                  &lt;b:if cond='data:blog.pageType == &amp;quot;item&amp;quot;'&gt;
+
+                &lt;div class='share-post'&gt;
+
+                &lt;ul class='entry-share-list clearfix'&gt;
+
+                 &lt;li&gt;Compartir en: &lt;/li&gt;
+
+                 &lt;li class='facebook_share'&gt;
+
+                 &lt;a aria-label='Facebook' expr:href='&amp;quot;http://www.facebook.com/sharer.php?u=&amp;quot; + data:post.url + &amp;quot;&amp;amp;title=&amp;quot;+ data:post.title' onclick='window.open(this.href, &amp;apos;windowName&amp;apos;, &amp;apos;width=550, height=600, left=24, top=24, scrollbars, resizable&amp;apos;); return false;' rel='nofollow noopener' target='_blank'&gt;
+
+                &lt;i class='fa fa-facebook'/&gt; &lt;/a&gt;
+
+                &lt;/li&gt;
+
+                &lt;li class='twitter_share'&gt;
+
+                &lt;a aria-label='Twitter' expr:href='&amp;quot;http://twitter.com/share?url=&amp;quot; + data:post.url + &amp;quot;&amp;amp;title=&amp;quot; + data:post.title' onclick='window.open(this.href, &amp;apos;windowName&amp;apos;, &amp;apos;width=550, height=600, left=24, top=24, scrollbars, resizable&amp;apos;); return false;' rel='nofollow noopener' target='_blank'&gt;
+
+                &lt;i class='fa fa-twitter'/&gt;&lt;/a&gt;
+
+                &lt;/li&gt;
+
+                 &lt;li class='linkedin_share'&gt;
+
+                 &lt;a aria-label='Linkedin' expr:href='&amp;quot;http://www.linkedin.com/shareArticle?mini=true&amp;amp;url=&amp;quot; + data:post.url + &amp;quot;&amp;amp;title=&amp;quot;+ data:post.title' onclick='window.open(this.href, &amp;apos;windowName&amp;apos;, &amp;apos;width=550, height=600, left=24, top=24, scrollbars, resizable&amp;apos;); return false;' rel='nofollow noopener' target='_blank'&gt;
+
+                &lt;i class='fa fa-linkedin'/&gt;&lt;/a&gt; &lt;/li&gt;
+
+                &lt;li&gt;&lt;a aria-label='Pinterest' expr:href='&amp;quot;http://pinterest.com/pin/create/button/?url=&amp;quot; + data:post.url + &amp;quot;&amp;amp;media=&amp;quot; + data:post.thumbnailUrl + &amp;quot;&amp;amp;description=&amp;quot; + data:post.snippet' onclick='window.open(this.href, &amp;apos;windowName&amp;apos;, &amp;apos;width=550, height=600, left=24, top=24, scrollbars, resizable&amp;apos;); return false;' rel='nofollow noopener'&gt;
+
+                &lt;i class='fa fa-pinterest'/&gt;&lt;/a&gt;
+
+                &lt;/li&gt;
+
+                &lt;/ul&gt;
+
+                &lt;/div&gt;
+
+                &lt;/b:if&gt; 
+
+                  
+
+                &lt;section class='container-movie entradas-relacionadas'&gt;&lt;!-- entradas relacionadas --&gt;
+
+                   &lt;div class='titulo-seccion' style='padding: 0px;margin: 0;'&gt;
+
+                       &lt;h2 class='titulo-seccion-post'&gt;Películas recomendadas:&lt;/h2&gt;
+
+                   &lt;/div&gt;
+
+                    &lt;div class='grid-movie' id='grid-movie-relacionadas'&gt;
+
+                       &lt;b:include cond='data:view.isPost and data:post.labels' name='postRelated'/&gt;
+
+                    &lt;/div&gt;
+
+                 &lt;/section&gt;&lt;!-- container-movie/entradas relacionadas --&gt;
+
+
+
+             &lt;/div&gt;&lt;!-- grid-movie-post --&gt;
+
+
+
+              
+
+            &lt;b:elseif cond='data:view.isPage'/&gt;&lt;!--{{ pagina estatica }}--&gt;
+
+              &lt;div class='grid-movie-post pagina-estatica'&gt;
+
+              &lt;h1&gt;&lt;data:post.title/&gt;&lt;/h1&gt;
+
+              &lt;data:post.body/&gt;
+
+              &lt;/div&gt;
+
+            &lt;/b:if&gt;
+
+
+
+          &lt;/b:includable&gt;
+              &lt;b:includable id='postAuthor'&gt;
+
+        &lt;span class='byline post-author vcard'&gt;
+
+          &lt;span class='post-author-label'&gt;
+
+            &lt;data:byline.label/&gt;
+
+          &lt;/span&gt;
+
+          &lt;span class='fn'&gt;
+
+            &lt;b:if cond='data:post.author.profileUrl'&gt;
+
+              &lt;meta expr:content='data:post.author.profileUrl'/&gt;
+
+              &lt;a class='g-profile' expr:href='data:post.author.profileUrl' rel='author' title='author profile'&gt;
+
+                &lt;span&gt;&lt;data:post.author.name/&gt;&lt;/span&gt;
+
+              &lt;/a&gt;
+
+            &lt;b:else/&gt;
+
+              &lt;span&gt;&lt;data:post.author.name/&gt;&lt;/span&gt;
+
+            &lt;/b:if&gt;
+
+          &lt;/span&gt;
+
+        &lt;/span&gt;
+
+      &lt;/b:includable&gt;
+              &lt;b:includable id='postBody' var='post'&gt;&lt;!-- disable --&gt;&lt;/b:includable&gt;
+              &lt;b:includable id='postBodySnippet' var='post'&gt;&lt;!-- disable --&gt;&lt;/b:includable&gt;
+              &lt;b:includable id='postCommentsAndAd' var='post'&gt;&lt;!-- disable --&gt;&lt;/b:includable&gt;
+              &lt;b:includable id='postCommentsLink'&gt;&lt;!-- disable --&gt;&lt;/b:includable&gt;
+              &lt;b:includable id='postFooter' var='post'&gt;&lt;!-- disable --&gt;&lt;/b:includable&gt;
+              &lt;b:includable id='postFooterAuthorProfile' var='post'&gt;&lt;!-- disable --&gt;&lt;/b:includable&gt;
+              &lt;b:includable id='postHeader' var='post'&gt;&lt;!-- disable --&gt;&lt;/b:includable&gt;
+              &lt;b:includable id='postJumpLink' var='post'&gt;&lt;!-- disable --&gt;&lt;/b:includable&gt;
+              &lt;b:includable id='postLabels'&gt;
+
+        &lt;span class='byline post-labels'&gt;
+
+          &lt;span class='byline-label'&gt;&lt;data:byline.label/&gt;&lt;/span&gt;
+
+          &lt;b:loop index='i' values='data:post.labels' var='label'&gt;
+
+            &lt;a expr:href='data:label.url' rel='tag'&gt;
+
+              &lt;data:label.name/&gt;
+
+            &lt;/a&gt;
+
+          &lt;/b:loop&gt;
+
+        &lt;/span&gt;
+
+      &lt;/b:includable&gt;
+              &lt;b:includable id='postLocation'&gt;
+
+        &lt;span class='byline post-location'&gt;
+
+          &lt;data:byline.label/&gt;
+
+          &lt;a expr:href='data:post.location.mapsUrl' target='_blank'&gt;&lt;data:post.location.name/&gt;&lt;/a&gt;
+
+        &lt;/span&gt;
+
+      &lt;/b:includable&gt;
+              &lt;b:includable id='postMeta' var='post'&gt;&lt;!-- disable --&gt;&lt;/b:includable&gt;
+              &lt;b:includable id='postMetadataJSONImage'&gt;
+
+        &amp;quot;image&amp;quot;: {
+
+          &amp;quot;@type&amp;quot;: &amp;quot;ImageObject&amp;quot;,
+
+          &lt;b:if cond='data:post.featuredImage.isResizable'&gt;
+
+          &amp;quot;url&amp;quot;: &amp;quot;&lt;b:eval expr='resizeImage(data:post.featuredImage, 1200, &amp;quot;1200:630&amp;quot;)'/&gt;&amp;quot;,
+
+          &amp;quot;height&amp;quot;: 630,
+
+          &amp;quot;width&amp;quot;: 1200
+
+          &lt;b:else/&gt;
+
+          &amp;quot;url&amp;quot;: &amp;quot;https://lh3.googleusercontent.com/ULB6iBuCeTVvSjjjU1A-O8e9ZpVba6uvyhtiWRti_rBAs9yMYOFBujxriJRZ-A=w1200&amp;quot;,
+
+          &amp;quot;height&amp;quot;: 348,
+
+          &amp;quot;width&amp;quot;: 1200
+
+          &lt;/b:if&gt;
+
+        },
+
+      &lt;/b:includable&gt;
+              &lt;b:includable id='postMetadataJSONPublisher'&gt;
+
+       &amp;quot;publisher&amp;quot;: {
+
+          &amp;quot;@type&amp;quot;: &amp;quot;Organization&amp;quot;,
+
+          &amp;quot;name&amp;quot;: &amp;quot;Blogger&amp;quot;,
+
+          &amp;quot;logo&amp;quot;: {
+
+            &amp;quot;@type&amp;quot;: &amp;quot;ImageObject&amp;quot;,
+
+            &amp;quot;url&amp;quot;: &amp;quot;https://lh3.googleusercontent.com/ULB6iBuCeTVvSjjjU1A-O8e9ZpVba6uvyhtiWRti_rBAs9yMYOFBujxriJRZ-A=h60&amp;quot;,
+
+            &amp;quot;width&amp;quot;: 206,
+
+            &amp;quot;height&amp;quot;: 60
+
+          }
+
+        },
+
+      &lt;/b:includable&gt;
+              &lt;b:includable id='postPagination'&gt;
+
+            &lt;b:tag class='blog-pager' cond='data:newerPageUrl or data:olderPageUrl' id='blog-pager' name='div'&gt;
+
+              &lt;div class='paginacion'&gt;
+
+               &lt;b:if cond='data:newerPageUrl'&gt;
+
+          &lt;a class='bton-paginacion bton-left' expr:href='data:newerPageUrl' title='Peliculas más recientes'&gt;
+
+            &lt;i aria-hidden='true' class='fa fa-chevron-left'/&gt;
+
+            RECIENTES
+
+          &lt;/a&gt;
+
+                 &lt;/b:if&gt;
+
+                
+
+                &lt;b:if cond='data:olderPageUrl'&gt;
+
+
+
+          &lt;a class='bton-paginacion bton-right' expr:href='data:olderPageUrl' title='Anteriores Películas'&gt;
+
+            MÁS PELÍCULAS
+
+            &lt;i aria-hidden='true' class='fa fa-chevron-right'/&gt;
+
+          &lt;/a&gt;
+
+        &lt;/b:if&gt;
+
+              
+
+               &lt;/div&gt;&lt;!-- fin paginacion --&gt;
+
+            &lt;/b:tag&gt;
+
+          &lt;/b:includable&gt;
+              &lt;b:includable id='postReactions'&gt;
+
+        &lt;!-- Reaction feature no longer available. The includable is retained for backwards-compatibility. --&gt;
+
+      &lt;/b:includable&gt;
+              &lt;b:includable data='post' id='postRelated'&gt;
+
+   &lt;script&gt;
+
+   /*!
+
+    * wjs-related v2.1.0
+
+    * Entradas relacionadas
+
+    * Copyright 2018 zkreations
+
+    * Developed by José Gregorio (fb.com/JGMateran)
+
+    * Licensed under MIT (github.com/zkreations/wjs-related/blob/master/LICENSE)
+
+    */
+
+   var related = (function(){
+
+   &amp;#39;use strict&amp;#39;;
+
+   
+
+   //Configuracion
+
+   var defaults = {
+
+      id: &amp;#39;&lt;data:post.id/&gt;&amp;#39;,
+
+      homepage: window.location.protocol + &amp;#39;//&amp;#39; + window.location.hostname,
+
+      image: &amp;#39;src/imgdefault.jpg&amp;#39;, //Imagen por defecto
+
+      length: 4, //Cantidad de entradas
+
+      localeDate: &amp;#39;es-ES&amp;#39;, //Idioma
+
+      snippet: 50, //Cantidad de texto
+
+      imgSize: &amp;#39;s256&amp;#39;, //Recorte de la imagen
+
+      container: document.getElementById(&amp;#39;grid-movie-relacionadas&amp;#39;),
+
+      tags: [&lt;b:loop values='data:post.labels' var='label'&gt;&amp;#39;&lt;data:label.name/&gt;&amp;#39;,&lt;/b:loop&gt;]
+
+   };
+
+   
+
+   //&lt;![CDATA[
+
+   var tags$length = defaults.tags.length;
+
+   var script = document.createElement( 'script' );
+
+   var src = defaults.homepage + '/feeds/posts/default' +
+
+      '?alt=json-in-script' +
+
+      '&amp;callback=related' +
+
+      '&amp;max-results=' + ( defaults.length + 1 ) +
+
+      '&amp;q=';
+
+   for ( var n = 0; n &lt; tags$length; n++ ){
+
+      src += 'label:"' + defaults.tags[ n ] + '"' + ( n === tags$length - 1 ? '' : '|' );
+
+   }
+
+   script.src = src;
+
+   document.body.appendChild( script );
+
+   function render( data ){
+
+      var title = data.title.$t;
+
+      var content = data.content;
+
+      var summary = data.summary;
+
+      var body = content ? content.$t : summary.$t;
+
+      var snippet = (body).replace(/&lt;[^&gt;]*&gt;?/g,'').substring( 0, defaults.snippet ) + '...';
+
+      var img = data.media$thumbnail;
+
+      var tempHtml = document.createElement('div');
+
+      tempHtml.innerHTML = body;
+
+      var imgHtml = tempHtml.querySelector('img');
+
+      var image = ( img ? img.url : (imgHtml ? imgHtml.src : defaults.image)).replace(/[swh]\d{2,4}(?:-[swh]\d{2,4})?(?:-c)?/, defaults.imgSize); 
+
+      var url = (function(){
+
+         for ( var i = 0; i &lt; data.link.length; i++ ){
+
+            var link = data.link[i];
+
+            if ( link.rel === 'alternate' ){
+
+               return link.href;
+
+            }
+
+         }
+
+      })();
+
+      var published = new Date( data.published.$t ).toLocaleDateString(
+
+         defaults.localeDate,
+
+         {year:'numeric', month:'long', day: 'numeric'}
+
+      );
+
+      return (
+
+         '&lt;div class="cards-movie"&gt;'+
+
+            '&lt;div class="movie-img"&gt;'+
+
+               '&lt;img src="' + image + '" alt="' + title + '" /&gt;'+
+
+        '&lt;i class="fa fa-play-circle" aria-hidden="true"&gt;&lt;/i&gt;'+
+
+                  '&lt;a aria-label="Entradas-populares" href="' + url + '"&gt;&lt;/a&gt;'+
+
+       '&lt;/div&gt;'+
+
+             '&lt;div class="movie-titulo"&gt;'+
+
+          '&lt;a href="' + url + '"&gt;'+
+
+                      '&lt;h3&gt;' + title + '&lt;/h3&gt;'+
+
+             '&lt;/a&gt;'+
+
+               '&lt;/div&gt;'+
+
+         '&lt;/div&gt;'
+
+      );
+
+   }
+
+   function related( json ){
+
+      var i = 0;
+
+      var post;
+
+      var length = defaults.length;
+
+      for ( ; i &lt; length &amp;&amp; ( post = json.feed.entry[ i ] ); i++ ){
+
+         if ( defaults.id !== post.id.$t.split( '.post-' )[ 1 ] ){
+
+            defaults.container.innerHTML += render( post );
+
+         } else {
+
+            length++;
+
+         }
+
+      }
+
+   }
+
+   return related;
+
+   })();
+
+//]]&gt;&lt;/script&gt;
+
+&lt;/b:includable&gt;
+              &lt;b:includable id='postShareButtons'&gt;
+
+        &lt;div class='byline post-share-buttons goog-inline-block'&gt;
+
+          &lt;b:with value='data:sharingId ?: ((data:widget.instanceId ?: &amp;quot;sharing&amp;quot;) + &amp;quot;-&amp;quot; + (data:regionName ?: &amp;quot;byline&amp;quot;) + &amp;quot;-&amp;quot; + data:post.id)' var='sharingId'&gt;
+
+            &lt;!-- Note: 'sharingButtons' includable is from the default Sharing widget markup. --&gt;
+
+            &lt;b:include data='{                                                sharingId: data:sharingId,                                                originalUrl: data:post.url,                                                platforms: data:this.sharing.platforms,                                                shareUrl: data:post.shareUrl,                                                shareTitle: data:post.title,                                              }' name='sharingButtons'/&gt;
+
+          &lt;/b:with&gt;
+
+        &lt;/div&gt;
+
+      &lt;/b:includable&gt;
+              &lt;b:includable id='postTimestamp'&gt;
+
+        &lt;span class='byline post-timestamp'&gt;
+
+          &lt;data:byline.label/&gt;
+
+          &lt;b:if cond='data:post.url'&gt;
+
+            &lt;meta expr:content='data:post.url.canonical'/&gt;
+
+            &lt;a class='timestamp-link' expr:href='data:post.url' rel='bookmark' title='permanent link'&gt;
+
+              &lt;time class='published' expr:datetime='data:post.date.iso8601' expr:title='data:post.date.iso8601'&gt;
+
+                &lt;data:post.date/&gt;
+
+              &lt;/time&gt;
+
+            &lt;/a&gt;
+
+          &lt;/b:if&gt;
+
+        &lt;/span&gt;
+
+      &lt;/b:includable&gt;
+              &lt;b:includable id='postTitle' var='post'&gt;&lt;!-- disable --&gt;&lt;/b:includable&gt;
+              &lt;b:includable id='previousPageLink'&gt;
+
+            &lt;a expr:href='data:newerPageUrl'&gt;&lt;data:messages.newer/&gt;&lt;/a&gt;
+
+          &lt;/b:includable&gt;
+              &lt;b:includable id='sharingButton'&gt;
+
+        &lt;span expr:aria-label='data:platform.shareMessage' expr:class='&amp;quot;sharing-platform-button sharing-element-&amp;quot; + data:platform.key' expr:data-href='data:shareUrl + &amp;quot;&amp;amp;target=&amp;quot; + data:platform.target' expr:data-url='data:originalUrl' expr:title='data:platform.shareMessage' role='menuitem' tabindex='-1'&gt;
+
+          &lt;b:include name='sharingPlatformIcon'/&gt;
+
+          &lt;span class='platform-sharing-text'&gt;&lt;data:platform.name/&gt;&lt;/span&gt;
+
+        &lt;/span&gt;
+
+      &lt;/b:includable&gt;
+              &lt;b:includable id='sharingButtonContent'&gt;
+
+        &lt;div class='flat-icon-button ripple'&gt;
+
+          &lt;b:include name='shareIcon'/&gt;
+
+        &lt;/div&gt;
+
+      &lt;/b:includable&gt;
+              &lt;b:includable id='sharingButtons'&gt;
+
+        &lt;div class='sharing' expr:aria-owns='&amp;quot;sharing-popup-&amp;quot; + data:sharingId' expr:data-title='data:shareTitle'&gt;
+
+          &lt;button class='sharing-button touch-icon-button' expr:aria-controls='&amp;quot;sharing-popup-&amp;quot; + data:sharingId' expr:aria-label='data:messages.share.escaped' expr:id='&amp;quot;sharing-button-&amp;quot; + data:sharingId' role='button'&gt;
+
+            &lt;b:include name='sharingButtonContent'/&gt;
+
+          &lt;/button&gt;
+
+          &lt;b:include name='sharingButtonsMenu'/&gt;
+
+        &lt;/div&gt;
+
+      &lt;/b:includable&gt;
+              &lt;b:includable id='sharingButtonsMenu'&gt;
+
+        &lt;div class='share-buttons-container'&gt;
+
+          &lt;ul aria-hidden='true' class='share-buttons hidden' expr:aria-label='data:messages.share.escaped' expr:id='&amp;quot;sharing-popup-&amp;quot; + data:sharingId' role='menu'&gt;
+
+            &lt;b:loop values='(data:platforms ?: data:blog.sharing.platforms) filter (p =&amp;gt; p.key not in {&amp;quot;blogThis&amp;quot;})' var='platform'&gt;
+
+              &lt;li&gt;
+
+                &lt;b:include name='sharingButton'/&gt;
+
+              &lt;/li&gt;
+
+            &lt;/b:loop&gt;
+
+            &lt;li aria-hidden='true' class='hidden'&gt;
+
+              &lt;b:include name='otherSharingButton'/&gt;
+
+            &lt;/li&gt;
+
+          &lt;/ul&gt;
+
+        &lt;/div&gt;
+
+      &lt;/b:includable&gt;
+              &lt;b:includable id='sharingPlatformIcon'&gt;
+
+        &lt;b:include data='{ iconClass: (&amp;quot;touch-icon sharing-&amp;quot; + data:platform.key) }' expr:name='data:platform.key + &amp;quot;Icon&amp;quot;'/&gt;
+
+      &lt;/b:includable&gt;
+              &lt;b:includable id='sidebar' var='sidebar'&gt;
+
+
+
+          &lt;/b:includable&gt;
+              &lt;b:includable id='status-message'&gt;
+
+            &lt;b:eval expr='data:view.isPreview ? data:messages.widgetNotAvailableInPreview : data:post.noNewCommentsText'/&gt;
+
+          &lt;/b:includable&gt;
+              &lt;b:includable id='threadedCommentForm' var='post'&gt;
+
+
+
+            &lt;div class='comment-form'&gt;
+
+       
+
+               &lt;a aria-label='comment-form' expr:href='data:post.commentFormIframeSrc' id='comment-editor-src'/&gt;
+
+               &lt;iframe class='blogger-iframe-colorize blogger-comment-from-post' id='comment-editor' src='' title='Caja de Comentarios'/&gt;
+
+               &lt;data:post.cmtfpIframe/&gt;
+
+               &lt;script&gt;BLOG_CMT_createIframe(&amp;quot;&lt;data:post.appRpcRelayPath/&gt;&amp;quot;);&lt;/script&gt;
+
+            &lt;/div&gt;
+
+          &lt;/b:includable&gt;
+              &lt;b:includable id='threadedCommentJs' var='post'&gt;
+
+            &lt;script async='async' expr:src='data:post.commentSrc'/&gt;
+
+            &lt;b:template-script inline='true' name='threaded_comments'/&gt;
+
+            &lt;b:if cond='data:post.showThreadedComments'&gt;
+
+               &lt;script&gt;blogger.widgets.blog.initThreadedComments(
+
+                  &lt;data:post.commentJso/&gt;,
+
+                  &lt;data:post.commentMsgs/&gt;,
+
+                  &lt;data:post.commentConfig/&gt;);//&lt;![CDATA[
+
+                  var a = document.getElementsByClassName("avatar-image-container");
+
+                  for (i = 0; i &lt; a.length; i++) a[i].childNodes[0].setAttribute("src", a[i].childNodes[0].getAttribute("src").replace(/s\B\d{2,4}/, "s80"));
+
+               //]]&gt;&lt;/script&gt;
+
+            &lt;/b:if&gt;
+
+          &lt;/b:includable&gt;
+              &lt;b:includable id='threadedComments' var='post'&gt;&lt;!-- disable --&gt;&lt;/b:includable&gt;
+            &lt;/b:widget&gt;
+          &lt;/b:section&gt;
+
+      
+
+               
+
+     
+
+      &lt;b:section class='contenido__sidebar' id='BlogSidebar' name='Barra lateral'&gt;
+        &lt;b:widget id='Text1' locked='false' title='¡Bienvenido de vuelta a la versión clásica!' type='Text' visible='true'&gt;
+          &lt;b:widget-settings&gt;
+            &lt;b:widget-setting name='content'&gt;Ya que  el nuevo diseño tenia fallas al reproducir y al ver, se tomo la decisión de regresar a la versión estable pero con mayor contenido espero que les guste.&lt;/b:widget-setting&gt;
+          &lt;/b:widget-settings&gt;
+          &lt;b:includable id='main'&gt;
+  &lt;b:include name='widget-title'/&gt;
+  &lt;div class='widget-content'&gt;
+    &lt;data:content/&gt;
+  &lt;/div&gt;
+&lt;/b:includable&gt;
+        &lt;/b:widget&gt;
+        &lt;b:widget id='HTML2' locked='false' title='' type='HTML' visible='true'&gt;
+          &lt;b:widget-settings&gt;
+            &lt;b:widget-setting name='content'&gt;&amp;lt;style type=&amp;quot;text/css&amp;quot;&amp;gt;.Wdgt peli_top_estrenos 
+    --body: #0b0c0c;
+    --text: #bfc1c3;
+    --link: #ffffff;
+    --primary: #ffbf47;
+    --wp--preset--color--black: #000000;
+    --wp--preset--color--cyan-bluish-gray: #abb8c3;
+    --wp--preset--color--white: #ffffff;
+    --wp--preset--color--pale-pink: #f78da7;
+    --wp--preset--color--vivid-red: #cf2e2e;
+    --wp--preset--color--luminous-vivid-orange: #ff6900;
+    --wp--preset--color--luminous-vivid-amber: #fcb900;
+    --wp--preset--color--light-green-cyan: #7bdcb5;
+    --wp--preset--color--vivid-green-cyan: #00d084;
+    --wp--preset--color--pale-cyan-blue: #8ed1fc;
+    --wp--preset--color--vivid-cyan-blue: #0693e3;
+    --wp--preset--color--vivid-purple: #9b51e0;
+    --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 50%);
+    --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);
+    --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);
+    --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);
+    --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);
+    --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);
+    --wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);
+    --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);
+    --wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);
+    --wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);
+    --wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);
+    --wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);
+    --wp--preset--duotone--dark-grayscale: url(&amp;#39;#wp-duotone-dark-grayscale&amp;#39;);
+    --wp--preset--duotone--grayscale: url(&amp;#39;#wp-duotone-grayscale&amp;#39;);
+    --wp--preset--duotone--purple-yellow: url(&amp;#39;#wp-duotone-purple-yellow&amp;#39;);
+    --wp--preset--duotone--blue-red: url(&amp;#39;#wp-duotone-blue-red&amp;#39;);
+    --wp--preset--duotone--midnight: url(&amp;#39;#wp-duotone-midnight&amp;#39;);
+    --wp--preset--duotone--magenta-yellow: url(&amp;#39;#wp-duotone-magenta-yellow&amp;#39;);
+    --wp--preset--duotone--purple-green: url(&amp;#39;#wp-duotone-purple-green&amp;#39;);
+    --wp--preset--duotone--blue-orange: url(&amp;#39;#wp-duotone-blue-orange&amp;#39;);
+    --wp--preset--font-size--small: 13px;
+    --wp--preset--font-size--medium: 20px;
+    --wp--preset--font-size--large: 36px;
+    --wp--preset--font-size--x-large: 42px;
+    font: 400 1rem/1.5625rem sans-serif;
+    word-wrap: break-word;
+    font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,Oxygen,Ubuntu,Cantarell,open sans,helvetica neue,sans-serif;
+    color: #8da0bc;
+    box-sizing: border-box;
+    margin-bottom: 2.5rem;
+&amp;lt;/style&amp;gt;
+
+&amp;lt;div id=&amp;quot;peli_top_estrenos-2&amp;quot; class=&amp;quot;Wdgt peli_top_estrenos&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;Title widget-title&amp;quot;&amp;gt;TOP ESTRENOS&amp;lt;/div&amp;gt;
+&amp;lt;ul class=&amp;quot;MovieList top&amp;quot;&amp;gt;
+&amp;lt;li&amp;gt;&amp;lt;div class=&amp;quot;TPost A&amp;quot;&amp;gt;
+&amp;lt;a href=&amp;quot;&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;Image&amp;quot;&amp;gt;
+&amp;lt;figure class=&amp;quot;Objf TpMvPlay AAIco-play_arrow&amp;quot;&amp;gt;
+&amp;lt;img width=&amp;quot;160&amp;quot; height=&amp;quot;242&amp;quot; src=&amp;quot;https://static.esplay.io/movie/cover/original/osYbtvqjMUhEXgkuFJOsRYVpq6N.webp&amp;quot; data-src=&amp;quot;https://static.esplay.io/movie/cover/original/osYbtvqjMUhEXgkuFJOsRYVpq6N.webp&amp;quot; alt=&amp;quot;Pasión, amor y muerte&amp;quot; class=&amp;quot;lazy entered loaded&amp;quot; data-ll-status=&amp;quot;loaded&amp;quot; /&amp;gt;
+&amp;lt;/figure&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;Title&amp;quot;&amp;gt;Spider-Man: Sin Camino a Casa&amp;lt;/div&amp;gt;
+&amp;lt;/a&amp;gt;
+&amp;lt;p class=&amp;quot;Info&amp;quot;&amp;gt;
+&amp;lt;span class=&amp;quot;Time AAIco-access_time&amp;quot;&amp;gt;02h 28m&amp;lt;/span&amp;gt;
+&amp;lt;span class=&amp;quot;Date AAIco-date_range&amp;quot;&amp;gt;2021&amp;lt;/span&amp;gt;
+&amp;lt;span class=&amp;quot;Qlty&amp;quot;&amp;gt;Full HD&amp;lt;/span&amp;gt;
+&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;&amp;lt;div class=&amp;quot;TPost A&amp;quot;&amp;gt;
+&amp;lt;a href=&amp;quot;&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;Image&amp;quot;&amp;gt;
+&amp;lt;figure class=&amp;quot;Objf TpMvPlay AAIco-play_arrow&amp;quot;&amp;gt;
+&amp;lt;img width=&amp;quot;160&amp;quot; height=&amp;quot;242&amp;quot; src=&amp;quot;https://static.esplay.io/movie/cover/original/A4jt7Gqa7dRT2ZIo3hNHc4esw3d.webp&amp;quot; data-src=&amp;quot;https://static.esplay.io/movie/cover/original/A4jt7Gqa7dRT2ZIo3hNHc4esw3d.webp&amp;quot; alt=&amp;quot;Capitán Nova&amp;quot; class=&amp;quot;lazy entered loaded&amp;quot; data-ll-status=&amp;quot;loaded&amp;quot; /&amp;gt;
+&amp;lt;/figure&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;Title&amp;quot;&amp;gt;Turning Red&amp;lt;/div&amp;gt;
+&amp;lt;/a&amp;gt;
+&amp;lt;p class=&amp;quot;Info&amp;quot;&amp;gt;
+&amp;lt;span class=&amp;quot;Vote AAIco-star&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;
+&amp;lt;span class=&amp;quot;Time AAIco-access_time&amp;quot;&amp;gt;1h 40m&amp;lt;/span&amp;gt;
+&amp;lt;span class=&amp;quot;Date AAIco-date_range&amp;quot;&amp;gt;2022&amp;lt;/span&amp;gt;
+&amp;lt;span class=&amp;quot;Qlty&amp;quot;&amp;gt;Full HD&amp;lt;/span&amp;gt;
+&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;&amp;lt;div class=&amp;quot;TPost A&amp;quot;&amp;gt;
+&amp;lt;a href=&amp;quot;&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;Image&amp;quot;&amp;gt;
+&amp;lt;figure class=&amp;quot;Objf TpMvPlay AAIco-play_arrow&amp;quot;&amp;gt;
+&amp;lt;img width=&amp;quot;160&amp;quot; height=&amp;quot;242&amp;quot; src=&amp;quot;https://static.esplay.io/movie/cover/original/y94auaBWq1E7sun3ZpvBmQfGUW.webp&amp;quot; data-src=&amp;quot;https://static.esplay.io/movie/cover/original/y94auaBWq1E7sun3ZpvBmQfGUW.webp&amp;quot; alt=&amp;quot;Nate: Mejor tarde que nunca&amp;quot; class=&amp;quot;lazy entered loaded&amp;quot; data-ll-status=&amp;quot;loaded&amp;quot; /&amp;gt;
+&amp;lt;/figure&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;Title&amp;quot;&amp;gt;The Fallout: La vida después&amp;lt;/div&amp;gt;
+&amp;lt;/a&amp;gt;
+&amp;lt;p class=&amp;quot;Info&amp;quot;&amp;gt;
+&amp;lt;span class=&amp;quot;Time AAIco-access_time&amp;quot;&amp;gt;1h 36m&amp;lt;/span&amp;gt;
+&amp;lt;span class=&amp;quot;Date AAIco-date_range&amp;quot;&amp;gt;2022&amp;lt;/span&amp;gt;
+&amp;lt;span class=&amp;quot;Qlty&amp;quot;&amp;gt;Full HD&amp;lt;/span&amp;gt;
+&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;/div&amp;gt;&lt;/b:widget-setting&gt;
+          &lt;/b:widget-settings&gt;
+          &lt;b:includable id='main'&gt;
+  &lt;b:include name='widget-title'/&gt;
+  &lt;div class='widget-content'&gt;
+    &lt;data:content/&gt;
+  &lt;/div&gt;
+&lt;/b:includable&gt;
+        &lt;/b:widget&gt;
+      &lt;/b:section&gt; &lt;!-- fin sidebar --&gt;
+
+
+
+    
+
+   &lt;/section&gt;&lt;!-- fin contenido-sidebar--&gt;
+
+
+
+&lt;/main&gt; &lt;!-- fin contenido --&gt;
+
+
+
+&lt;div class='bg-footer'&gt;
+
+  &lt;footer class='footer' id='creditos'&gt; 
+
+   
+
+    &lt;span id='creditos-left'&gt;
+
+    
+
+      &lt;a href='https://tutoriales-leo.blogspot.com/' id='mipeengler' rel='noopener' style='color: #ffd203' target='_blank'&gt;
+
+        
+
+      &lt;/a&gt;
+
+    &lt;/span&gt;
+
+
+
+    &lt;span id='creditos-right'&gt;
+
+      &lt;b:section id='footer-link' maxwidgets='1' name='Enlaces al final'&gt;
+        &lt;b:widget id='LinkList1' locked='true' title='Enlaces del Footer' type='LinkList' version='2' visible='true'&gt;
+          &lt;b:widget-settings&gt;
+            &lt;b:widget-setting name='sorting'&gt;NONE&lt;/b:widget-setting&gt;
+            &lt;b:widget-setting name='text-0'&gt;pagina principal&lt;/b:widget-setting&gt;
+            &lt;b:widget-setting name='link-0'&gt;/&lt;/b:widget-setting&gt;
+          &lt;/b:widget-settings&gt;
+          &lt;b:includable id='main'&gt;
+
+  &lt;b:include name='content'/&gt;
+
+&lt;/b:includable&gt;
+          &lt;b:includable id='content'&gt;
+
+ &lt;div class='widget-content'&gt;
+
+   &lt;ul&gt;
+
+     &lt;b:loop values='data:links' var='link'&gt;
+
+       &lt;li&gt;&lt;a expr:href='data:link.target'&gt;&lt;data:link.name/&gt;&lt;/a&gt;&lt;/li&gt;
+
+     &lt;/b:loop&gt;
+
+   &lt;/ul&gt;
+
+ &lt;/div&gt;
+
+&lt;/b:includable&gt;
+        &lt;/b:widget&gt;
+      &lt;/b:section&gt;
+
+      
+
+    &lt;/span&gt;
+
+
+
+  &lt;/footer&gt; &lt;!-- Fin Pie --&gt;
+
+
+
+&lt;/div&gt; &lt;!-- bg-foter --&gt;
+
+  
+
+
+
+  
+
+  &lt;a alt='Boton de subir' aria-label='Boton de subir' class='to-top' href='#'/&gt;
+
+  
+
+&lt;script crossorigin='anonymous' integrity='sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=' src='https://code.jquery.com/jquery-3.6.0.min.js'/&gt;
+
+&lt;script src='//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js' type='text/javascript'/&gt;
+
+&lt;script defer='defer' type='text/javascript'&gt;
+
+//&lt;![CDATA[
+
+$(document).ready(function(){$(".wjs-outsite").click(function(a){a.stopPropagation()}),$(".wjs-menu").click(function(a){a.stopPropagation()}),$("body").click(function(){$(".menu-cierra").hide(),$(".menu-abre").show(),$(".bg-overlay").hide()}),$(".menu-abre").click(function(){$(".menu-cierra").show(),$(".menu-abre").hide(),$(".bg-overlay").show(),$(".menu-cierra").css("background-color","rgb(249 33 33)"),$(".bg-overlay-2").hide(),$("#search__form-box").hide(),$(".btn-lupa-search").show(),$(".btn-cerrar-search").hide(),$(".search__form").hide()}),$(".menu-cierra").click(function(){$(".menu-cierra").hide(),$(".menu-abre").show(),$(".bg-overlay").hide()}),$(".btn-cerrar-search").click(function(){$(".bg-overlay-2").hide(),$("#search__form-box").hide(),$(".btn-lupa-search").show(),$(".btn-cerrar-search").hide(),$(".search__form").hide()}),$(".btn-lupa-search").click(function(){$(".btn-cerrar-search").css("background-color","rgb(249 33 33)"),$(".search__form").css("display","flex"),$(".bg-overlay-2").show(),$("#search__form-box").show(),$("#search__form-box").select(),$(".btn-lupa-search").hide(),$(".btn-cerrar-search").show(),$(".menu-abre").show(),$(".menu-cierra").hide()})});
+
+var whale=function(){"use strict";function a(b,c){return a.addElements(b,c)}function b(a,b){for(var c=0,d=a.length;c&lt;d&amp;&amp;!1!==b.call(a[c],c,a[c]);c++);return a}function c(a){return a.trim()}function d(a){return(" "+(a.getAttribute("class")||"")+" ").replace(/[\t\r\n\f]/g," ")}function e(a,b){return-1&lt;d(a).indexOf(b)}function f(a,f){var g=d(a);b(f.split(" "),function(b,d){d=c(d),e(a,d)||(g+=d+" ")}),a.setAttribute("class",c(g))}function g(a,e){b(e.split(" "),function(b,e){a.setAttribute("class",c(d(a).replace(" "+c(e)+" "," ")))})}function h(a,c){b(c.split(" "),function(b,c){(e(a,c)?g:f)(a,c)})}return a.extend=function(a){var b,c,d,e,f=1,g=arguments.length;for(f===g&amp;&amp;(a=this,f--);f&lt;g;f++)if(null!=(b=arguments[f]))for(d in b)c=b[d],e=a[d],c!==e&amp;&amp;(a[d]=c);return a},b([f,g,h],function(a,c){c.collection=function(a,d){b(a,function(a,b){c(b,d)})}}),a.components={},a.addElements=function(b,c){var d;if(c)a.components[b]=c;else for(d in b)a.components[d]=b[d];return this},a.extend({trim:c,forEach:b,hasClass:e,addClass:f,removeClass:g,toggleClass:h}),window.addEventListener("DOMContentLoaded",function(){var b,c=a.components;for(b in c)for(var d=0,e=document.querySelectorAll("."+b),f=e.length,g=c[b];d&lt;f;d++)new g(e[d],d,b)}),a}();!function(){"use strict";function a(a){var b=this.classes;whale.forEach(a.querySelectorAll("a"),function(a,c){var d=c.parentNode,e=d.querySelectorAll("ul"),f=d.querySelectorAll("a"),g=document.createElement("span"),h=e[0];e.length&amp;&amp;(whale.addClass(d,b.parent),whale.addClass(g,b.arrow),c.appendChild(g),c.addEventListener("click",function(a){a.preventDefault(),whale.hasClass(h,b.active)?(whale.removeClass.collection(e,b.active),whale.removeClass.collection(f,b.active)):whale.addClass.collection([c,h],b.active)}))})}function b(a){var b=this.classes,c=a.getAttribute(this.data.target),d=document.getElementById(c);a.addEventListener("click",function(c){if(c.preventDefault(),whale.hasClass(d,b.active))whale.removeClass.collection([a,d],b.active);else{whale.addClass.collection([a,d],b.active);var e=function(f){var g=f.target;f===c||g===d||d.contains(g)||(whale.removeClass.collection([a,d],b.active),document.removeEventListener("click",e))};document.addEventListener("click",e)}})}a.prototype={classes:{active:"is-active",parent:"is-parent",arrow:"is-arrow"}};var c=b.prototype={classes:{active:"is-active"},data:{target:"data-target"}},d={};whale.forEach(["addClass","removeClass","toggleClass"],function(a,b){d[b]=function(a){var d,e=a.getAttribute(c.data.target),f=document.querySelectorAll("."+e);f&amp;&amp;a.addEventListener("click",function(){d=whale[b],d(a,c.classes.active),d.collection(f,c.classes.active)})}}),whale.addElements(d).addElements({"wjs-menu":a,"wjs-outsite":b})}();$('.carousel__lista').slick({infinite: true,autoplay: true,autoplaySpeed: 2500,slidesToShow: 7,slidesToScroll: 1,arrows:true,prevArrow: $('.carousel__anterior'),nextArrow: $('.carousel__siguiente'),responsive: [{breakpoint: 2560.98,settings: {slidesToShow: 6,slidesToScroll: 1}},{breakpoint: 920.98,settings: {slidesToShow: 5,slidesToScroll: 1}},{breakpoint: 767.98,settings: {slidesToShow: 4,slidesToScroll: 1}},{breakpoint: 630.98,settings: {slidesToShow: 3,slidesToScroll: 1}},{breakpoint: 375.98,settings: {slidesToShow: 2,slidesToScroll: 1}}]});$('.contenido__sidebar h2').replaceWith(function() {return $("&lt;h3&gt;", {class: this.className,html: $(this).html()});});
+
+const toTop = document.querySelector(".to-top");window.addEventListener("scroll", () =&gt; {if (window.pageYOffset &gt; 100) {toTop.classList.add("active");}else{toTop.classList.remove("active");}});
+
+$(".grid-movie-post-one").each(function(){$(this).find("img").first().css({display:"none",margin:"0"}),$(this).find("a").first().css({display:"none",margin:"0",padding:"0"})});$(".grid-movie-post-one a").each(function(){$(this).attr("aria-label","link")});
+
+//]]&gt;
+
+&lt;/script&gt;
+
+  
+
+&lt;!-- Google analytics --&gt;
+
+&lt;b:include data='blog' name='google-analytics'/&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/template/default'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/template/default'/><link rel='alternate' type='text/html' href='http://vumo23.blogspot.com/'/><author><name>pancimovies</name><uri>https://www.blogger.com/profile/17016404698357411229</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='35' height='35' src='//www.blogger.com/img/blogger_logo_round_35.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-7600403054916393488.settings.BLOG_PUBLISHING_MODE</id><published>2023-10-28T19:29:18.129-07:00</published><updated>2023-10-28T19:29:38.263-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Tipo de publicación hecha para este blog</title><content type='text'>PUBLISH_MODE_BLOGSPOT</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_PUBLISHING_MODE'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_PUBLISHING_MODE'/><author><name>pancimovies</name><uri>https://www.blogger.com/profile/17016404698357411229</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='35' height='35' src='//www.blogger.com/img/blogger_logo_round_35.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-7600403054916393488.settings.BLOG_ADMIN_PERMISSION</id><published>2023-10-28T19:29:18.129-07:00</published><updated>2023-10-28T19:29:38.263-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Lista de correos electrónicos de los administradores del blog</title><content type='text'>diego.ormazabal05@gmail.com</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_ADMIN_PERMISSION'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_ADMIN_PERMISSION'/><author><name>pancimovies</name><uri>https://www.blogger.com/profile/17016404698357411229</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='35' height='35' src='//www.blogger.com/img/blogger_logo_round_35.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-7600403054916393488.settings.BLOG_ADULT_CONTENT</id><published>2023-10-28T19:29:18.129-07:00</published><updated>2023-10-28T19:29:38.263-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Si este blog incluye contenido para adultos.</title><content type='text'>false</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_ADULT_CONTENT'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_ADULT_CONTENT'/><author><name>pancimovies</name><uri>https://www.blogger.com/profile/17016404698357411229</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='35' height='35' src='//www.blogger.com/img/blogger_logo_round_35.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-7600403054916393488.settings.BLOG_ANALYTICS_ACCOUNT_NUMBER</id><published>2023-10-28T19:29:18.129-07:00</published><updated>2023-10-28T19:29:38.263-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Número de Cuenta de Google Analytics</title><content type='text'></content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_ANALYTICS_ACCOUNT_NUMBER'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_ANALYTICS_ACCOUNT_NUMBER'/><author><name>pancimovies</name><uri>https://www.blogger.com/profile/17016404698357411229</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='35' height='35' src='//www.blogger.com/img/blogger_logo_round_35.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-7600403054916393488.settings.BLOG_ARCHIVE_DATE_FORMAT</id><published>2023-10-28T19:29:18.129-07:00</published><updated>2023-10-28T19:29:38.263-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>El número del formato de fecha del índice de archivos</title><content type='text'>9</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_ARCHIVE_DATE_FORMAT'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_ARCHIVE_DATE_FORMAT'/><author><name>pancimovies</name><uri>https://www.blogger.com/profile/17016404698357411229</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='35' height='35' src='//www.blogger.com/img/blogger_logo_round_35.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-7600403054916393488.settings.BLOG_ARCHIVE_FREQUENCY</id><published>2023-10-28T19:29:18.129-07:00</published><updated>2023-10-28T19:29:38.263-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Con qué frecuencia debería archivarse el blog.</title><content type='text'>MONTHLY</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_ARCHIVE_FREQUENCY'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_ARCHIVE_FREQUENCY'/><author><name>pancimovies</name><uri>https://www.blogger.com/profile/17016404698357411229</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='35' height='35' src='//www.blogger.com/img/blogger_logo_round_35.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-7600403054916393488.settings.BLOG_AUTHOR_PERMISSION</id><published>2023-10-28T19:29:18.129-07:00</published><updated>2023-10-28T19:29:38.263-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>La lista de correos electrónicos de los autores que tienen permiso para publicar.</title><content type='text'></content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_AUTHOR_PERMISSION'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_AUTHOR_PERMISSION'/><author><name>pancimovies</name><uri>https://www.blogger.com/profile/17016404698357411229</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='35' height='35' src='//www.blogger.com/img/blogger_logo_round_35.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-7600403054916393488.settings.BLOG_BY_POST_ARCHIVING</id><published>2023-10-28T19:29:18.129-07:00</published><updated>2023-10-28T19:29:38.263-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Si se ofrece una página de archivo para cada entrada.</title><content type='text'>true</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_BY_POST_ARCHIVING'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_BY_POST_ARCHIVING'/><author><name>pancimovies</name><uri>https://www.blogger.com/profile/17016404698357411229</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='35' height='35' src='//www.blogger.com/img/blogger_logo_round_35.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-7600403054916393488.settings.BLOG_COMMENT_ACCESS</id><published>2023-10-28T19:29:18.129-07:00</published><updated>2023-10-28T19:29:38.263-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Quiénes pueden comentar</title><content type='text'>BLOGGERS</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_COMMENT_ACCESS'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_COMMENT_ACCESS'/><author><name>pancimovies</name><uri>https://www.blogger.com/profile/17016404698357411229</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='35' height='35' src='//www.blogger.com/img/blogger_logo_round_35.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-7600403054916393488.settings.BLOG_COMMENT_CAPTCHA</id><published>2023-10-28T19:29:18.129-07:00</published><updated>2023-10-28T19:29:38.263-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Si requerir que las personas que hacen comentarios completen un captcha.</title><content type='text'>true</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_COMMENT_CAPTCHA'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_COMMENT_CAPTCHA'/><author><name>pancimovies</name><uri>https://www.blogger.com/profile/17016404698357411229</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='35' height='35' src='//www.blogger.com/img/blogger_logo_round_35.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-7600403054916393488.settings.BLOG_COMMENT_EMAIL</id><published>2023-10-28T19:29:18.129-07:00</published><updated>2023-10-28T19:29:38.263-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Lista de direcciones de correo electrónico para enviar notificaciones de nuevos comentarios a </title><content type='text'>diego.ormazabal05@gmail.com</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_COMMENT_EMAIL'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_COMMENT_EMAIL'/><author><name>pancimovies</name><uri>https://www.blogger.com/profile/17016404698357411229</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='35' height='35' src='//www.blogger.com/img/blogger_logo_round_35.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-7600403054916393488.settings.BLOG_COMMENT_FEED</id><published>2023-10-28T19:29:18.129-07:00</published><updated>2023-10-28T19:29:38.263-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>El tipo de feed que se ofrece para los comentarios del blog</title><content type='text'>FULL</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_COMMENT_FEED'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_COMMENT_FEED'/><author><name>pancimovies</name><uri>https://www.blogger.com/profile/17016404698357411229</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='35' height='35' src='//www.blogger.com/img/blogger_logo_round_35.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-7600403054916393488.settings.BLOG_COMMENT_FORM_LOCATION</id><published>2023-10-28T19:29:18.129-07:00</published><updated>2023-10-28T19:29:38.263-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Ubicación del formulario de comentarios del blog</title><content type='text'>EMBEDDED_IFRAME</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_COMMENT_FORM_LOCATION'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_COMMENT_FORM_LOCATION'/><author><name>pancimovies</name><uri>https://www.blogger.com/profile/17016404698357411229</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='35' height='35' src='//www.blogger.com/img/blogger_logo_round_35.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-7600403054916393488.settings.BLOG_COMMENT_MESSAGE</id><published>2023-10-28T19:29:18.129-07:00</published><updated>2023-10-28T19:29:38.263-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Mensaje de comentario de blog</title><content type='text'></content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_COMMENT_MESSAGE'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_COMMENT_MESSAGE'/><author><name>pancimovies</name><uri>https://www.blogger.com/profile/17016404698357411229</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='35' height='35' src='//www.blogger.com/img/blogger_logo_round_35.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-7600403054916393488.settings.BLOG_COMMENT_MODERATION</id><published>2023-10-28T19:29:18.129-07:00</published><updated>2023-10-28T19:29:38.263-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Si se habilita la moderación de comentarios.</title><content type='text'>DISABLED</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_COMMENT_MODERATION'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_COMMENT_MODERATION'/><author><name>pancimovies</name><uri>https://www.blogger.com/profile/17016404698357411229</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='35' height='35' src='//www.blogger.com/img/blogger_logo_round_35.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-7600403054916393488.settings.BLOG_COMMENT_MODERATION_DELAY</id><published>2023-10-28T19:29:18.129-07:00</published><updated>2023-10-28T19:29:38.263-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Número de días tras los que los nuevos comentarios se someten a moderación</title><content type='text'>14</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_COMMENT_MODERATION_DELAY'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_COMMENT_MODERATION_DELAY'/><author><name>pancimovies</name><uri>https://www.blogger.com/profile/17016404698357411229</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='35' height='35' src='//www.blogger.com/img/blogger_logo_round_35.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-7600403054916393488.settings.BLOG_COMMENT_MODERATION_EMAIL</id><published>2023-10-28T19:29:18.129-07:00</published><updated>2023-10-28T19:29:38.263-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Dirección de correo electrónico para notificaciones de nuevos comentarios que necesiten moderación</title><content type='text'></content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_COMMENT_MODERATION_EMAIL'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_COMMENT_MODERATION_EMAIL'/><author><name>pancimovies</name><uri>https://www.blogger.com/profile/17016404698357411229</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='35' height='35' src='//www.blogger.com/img/blogger_logo_round_35.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-7600403054916393488.settings.BLOG_COMMENT_PROFILE_IMAGES</id><published>2023-10-28T19:29:18.129-07:00</published><updated>2023-10-28T19:29:38.263-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Si se muestran las imágenes de perfil en los comentarios.</title><content type='text'>true</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_COMMENT_PROFILE_IMAGES'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_COMMENT_PROFILE_IMAGES'/><author><name>pancimovies</name><uri>https://www.blogger.com/profile/17016404698357411229</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='35' height='35' src='//www.blogger.com/img/blogger_logo_round_35.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-7600403054916393488.settings.BLOG_COMMENTS_ALLOWED</id><published>2023-10-28T19:29:18.129-07:00</published><updated>2023-10-28T19:29:38.263-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Si se muestran los comentarios</title><content type='text'>true</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_COMMENTS_ALLOWED'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_COMMENTS_ALLOWED'/><author><name>pancimovies</name><uri>https://www.blogger.com/profile/17016404698357411229</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='35' height='35' src='//www.blogger.com/img/blogger_logo_round_35.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-7600403054916393488.settings.BLOG_COMMENTS_TIME_STAMP_FORMAT</id><published>2023-10-28T19:29:18.129-07:00</published><updated>2023-10-28T19:29:38.263-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Número de formato de la fecha de los comentarios</title><content type='text'>29</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_COMMENTS_TIME_STAMP_FORMAT'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_COMMENTS_TIME_STAMP_FORMAT'/><author><name>pancimovies</name><uri>https://www.blogger.com/profile/17016404698357411229</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='35' height='35' src='//www.blogger.com/img/blogger_logo_round_35.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-7600403054916393488.settings.BLOG_CUSTOM_ADS_TXT</id><published>2023-10-28T19:29:18.129-07:00</published><updated>2023-10-28T19:29:38.263-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>El contenido ads.txt personalizado del blog publicado en los motores de búsqueda para anuncios.</title><content type='text'></content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_CUSTOM_ADS_TXT'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_CUSTOM_ADS_TXT'/><author><name>pancimovies</name><uri>https://www.blogger.com/profile/17016404698357411229</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='35' height='35' src='//www.blogger.com/img/blogger_logo_round_35.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-7600403054916393488.settings.BLOG_CUSTOM_ADS_TXT_ENABLED</id><published>2023-10-28T19:29:18.129-07:00</published><updated>2023-10-28T19:29:38.263-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Establece si este blog publica contenido ads.txt personalizado en los motores de búsqueda para anuncios.</title><content type='text'>false</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_CUSTOM_ADS_TXT_ENABLED'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_CUSTOM_ADS_TXT_ENABLED'/><author><name>pancimovies</name><uri>https://www.blogger.com/profile/17016404698357411229</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='35' height='35' src='//www.blogger.com/img/blogger_logo_round_35.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-7600403054916393488.settings.BLOG_CUSTOM_PAGE_NOT_FOUND</id><published>2023-10-28T19:29:18.129-07:00</published><updated>2023-10-28T19:29:38.263-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>El mensaje que se muestra cuando no se encuentra la página o la publicación solicitada.</title><content type='text'></content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_CUSTOM_PAGE_NOT_FOUND'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_CUSTOM_PAGE_NOT_FOUND'/><author><name>pancimovies</name><uri>https://www.blogger.com/profile/17016404698357411229</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='35' height='35' src='//www.blogger.com/img/blogger_logo_round_35.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-7600403054916393488.settings.BLOG_CUSTOM_ROBOTS_TXT</id><published>2023-10-28T19:29:18.129-07:00</published><updated>2023-10-28T19:29:38.263-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>El contenido robots.txt personalizado del blog que se sirve a los motores de búsqueda</title><content type='text'></content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_CUSTOM_ROBOTS_TXT'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_CUSTOM_ROBOTS_TXT'/><author><name>pancimovies</name><uri>https://www.blogger.com/profile/17016404698357411229</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='35' height='35' src='//www.blogger.com/img/blogger_logo_round_35.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-7600403054916393488.settings.BLOG_CUSTOM_ROBOTS_TXT_ENABLED</id><published>2023-10-28T19:29:18.129-07:00</published><updated>2023-10-28T19:29:38.263-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Si este blog sirve contenido robots.txt personalizado a los motores de búsqueda.</title><content type='text'>false</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_CUSTOM_ROBOTS_TXT_ENABLED'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_CUSTOM_ROBOTS_TXT_ENABLED'/><author><name>pancimovies</name><uri>https://www.blogger.com/profile/17016404698357411229</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='35' height='35' src='//www.blogger.com/img/blogger_logo_round_35.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-7600403054916393488.settings.BLOG_DATE_FORMAT</id><published>2023-10-28T19:29:18.129-07:00</published><updated>2023-10-28T19:29:38.263-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>El número del formato del encabezado de fecha</title><content type='text'>26</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_DATE_FORMAT'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_DATE_FORMAT'/><author><name>pancimovies</name><uri>https://www.blogger.com/profile/17016404698357411229</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='35' height='35' src='//www.blogger.com/img/blogger_logo_round_35.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-7600403054916393488.settings.BLOG_DEFAULT_COMMENTS_MODE</id><published>2023-10-28T19:29:18.129-07:00</published><updated>2023-10-28T19:29:38.263-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Modo de comentario predeterminado para entradas</title><content type='text'>DEFAULT_HAVE_COMMENTS</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_DEFAULT_COMMENTS_MODE'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_DEFAULT_COMMENTS_MODE'/><author><name>pancimovies</name><uri>https://www.blogger.com/profile/17016404698357411229</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='35' height='35' src='//www.blogger.com/img/blogger_logo_round_35.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-7600403054916393488.settings.BLOG_DESCRIPTION</id><published>2023-10-28T19:29:18.129-07:00</published><updated>2023-10-28T19:29:38.263-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Agrega una descripción del blog</title><content type='text'></content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_DESCRIPTION'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_DESCRIPTION'/><author><name>pancimovies</name><uri>https://www.blogger.com/profile/17016404698357411229</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='35' height='35' src='//www.blogger.com/img/blogger_logo_round_35.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-7600403054916393488.settings.BLOG_EMAIL_POST_LINKS</id><published>2023-10-28T19:29:18.129-07:00</published><updated>2023-10-28T19:29:38.263-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Si se muestra un vínculo para que los usuarios envíen entradas por correo electrónico.</title><content type='text'>false</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_EMAIL_POST_LINKS'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_EMAIL_POST_LINKS'/><author><name>pancimovies</name><uri>https://www.blogger.com/profile/17016404698357411229</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='35' height='35' src='//www.blogger.com/img/blogger_logo_round_35.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-7600403054916393488.settings.BLOG_FEED_REDIRECT_URL</id><published>2023-10-28T19:29:18.129-07:00</published><updated>2023-10-28T19:29:38.263-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>URL para redireccionar las solicitudes de feed de entrada a</title><content type='text'></content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_FEED_REDIRECT_URL'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_FEED_REDIRECT_URL'/><author><name>pancimovies</name><uri>https://www.blogger.com/profile/17016404698357411229</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='35' height='35' src='//www.blogger.com/img/blogger_logo_round_35.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-7600403054916393488.settings.BLOG_FLOAT_ALIGNMENT</id><published>2023-10-28T19:29:18.129-07:00</published><updated>2023-10-28T19:29:38.263-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Si la alineación flotante está habilitada en el blog</title><content type='text'>true</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_FLOAT_ALIGNMENT'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_FLOAT_ALIGNMENT'/><author><name>pancimovies</name><uri>https://www.blogger.com/profile/17016404698357411229</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='35' height='35' src='//www.blogger.com/img/blogger_logo_round_35.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-7600403054916393488.settings.BLOG_LOCALE</id><published>2023-10-28T19:29:18.129-07:00</published><updated>2023-10-28T19:29:38.263-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Idioma de este blog</title><content type='text'>es_419</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_LOCALE'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_LOCALE'/><author><name>pancimovies</name><uri>https://www.blogger.com/profile/17016404698357411229</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='35' height='35' src='//www.blogger.com/img/blogger_logo_round_35.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-7600403054916393488.settings.BLOG_MAX_NUM</id><published>2023-10-28T19:29:18.129-07:00</published><updated>2023-10-28T19:29:38.263-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Número máximo de objetos que se mostrarán en la página principal”</title><content type='text'>7</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_MAX_NUM'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_MAX_NUM'/><author><name>pancimovies</name><uri>https://www.blogger.com/profile/17016404698357411229</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='35' height='35' src='//www.blogger.com/img/blogger_logo_round_35.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-7600403054916393488.settings.BLOG_MAX_UNIT</id><published>2023-10-28T19:29:18.129-07:00</published><updated>2023-10-28T19:29:38.263-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Unidad de objetos que se mostrarán en la página principal</title><content type='text'>POSTS</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_MAX_UNIT'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_MAX_UNIT'/><author><name>pancimovies</name><uri>https://www.blogger.com/profile/17016404698357411229</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='35' height='35' src='//www.blogger.com/img/blogger_logo_round_35.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-7600403054916393488.settings.BLOG_META_DESCRIPTION</id><published>2023-10-28T19:29:18.129-07:00</published><updated>2023-10-28T19:29:38.263-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Se ha proporcionado la descripción de meta del blog a los motores de búsqueda.</title><content type='text'></content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_META_DESCRIPTION'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_META_DESCRIPTION'/><author><name>pancimovies</name><uri>https://www.blogger.com/profile/17016404698357411229</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='35' height='35' src='//www.blogger.com/img/blogger_logo_round_35.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-7600403054916393488.settings.BLOG_META_DESCRIPTION_ENABLED</id><published>2023-10-28T19:29:18.129-07:00</published><updated>2023-10-28T19:29:38.263-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Determina si se pueden incluir descripciones de meta en este blog.</title><content type='text'>false</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_META_DESCRIPTION_ENABLED'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_META_DESCRIPTION_ENABLED'/><author><name>pancimovies</name><uri>https://www.blogger.com/profile/17016404698357411229</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='35' height='35' src='//www.blogger.com/img/blogger_logo_round_35.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-7600403054916393488.settings.BLOG_NAME</id><published>2023-10-28T19:29:18.129-07:00</published><updated>2023-10-28T19:29:38.263-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>El nombre del blog</title><content type='text'>QPeli</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_NAME'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_NAME'/><author><name>pancimovies</name><uri>https://www.blogger.com/profile/17016404698357411229</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='35' height='35' src='//www.blogger.com/img/blogger_logo_round_35.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-7600403054916393488.settings.BLOG_PER_POST_FEED</id><published>2023-10-28T19:29:18.129-07:00</published><updated>2023-10-28T19:29:38.263-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>El tipo de feed que se ofrece para los comentarios por entrada</title><content type='text'>FULL</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_PER_POST_FEED'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_PER_POST_FEED'/><author><name>pancimovies</name><uri>https://www.blogger.com/profile/17016404698357411229</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='35' height='35' src='//www.blogger.com/img/blogger_logo_round_35.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-7600403054916393488.settings.BLOG_POST_FEED</id><published>2023-10-28T19:29:18.129-07:00</published><updated>2023-10-28T19:29:38.263-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>El tipo de feed que se ofrece para las entradas del blog</title><content type='text'>FULL</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_POST_FEED'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_POST_FEED'/><author><name>pancimovies</name><uri>https://www.blogger.com/profile/17016404698357411229</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='35' height='35' src='//www.blogger.com/img/blogger_logo_round_35.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-7600403054916393488.settings.BLOG_POST_FEED_FOOTER</id><published>2023-10-28T19:29:18.129-07:00</published><updated>2023-10-28T19:29:38.263-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Pie de página para agregar al final de cada entrada en el feed de entrada </title><content type='text'></content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_POST_FEED_FOOTER'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_POST_FEED_FOOTER'/><author><name>pancimovies</name><uri>https://www.blogger.com/profile/17016404698357411229</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='35' height='35' src='//www.blogger.com/img/blogger_logo_round_35.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-7600403054916393488.settings.BLOG_POST_TEMPLATE</id><published>2023-10-28T19:29:18.129-07:00</published><updated>2023-10-28T19:29:38.263-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>La plantilla para entradas de blog</title><content type='text'></content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_POST_TEMPLATE'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_POST_TEMPLATE'/><author><name>pancimovies</name><uri>https://www.blogger.com/profile/17016404698357411229</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='35' height='35' src='//www.blogger.com/img/blogger_logo_round_35.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-7600403054916393488.settings.BLOG_QUICK_EDITING</id><published>2023-10-28T19:29:18.129-07:00</published><updated>2023-10-28T19:29:38.263-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Si la Edición rápida está habilitada.</title><content type='text'>true</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_QUICK_EDITING'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_QUICK_EDITING'/><author><name>pancimovies</name><uri>https://www.blogger.com/profile/17016404698357411229</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='35' height='35' src='//www.blogger.com/img/blogger_logo_round_35.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-7600403054916393488.settings.BLOG_READ_ACCESS_MODE</id><published>2023-10-28T19:29:18.129-07:00</published><updated>2023-10-28T19:29:38.263-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>El tipo de acceso para los lectores del blog.</title><content type='text'>PUBLIC</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_READ_ACCESS_MODE'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_READ_ACCESS_MODE'/><author><name>pancimovies</name><uri>https://www.blogger.com/profile/17016404698357411229</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='35' height='35' src='//www.blogger.com/img/blogger_logo_round_35.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-7600403054916393488.settings.BLOG_READER_PERMISSION</id><published>2023-10-28T19:29:18.129-07:00</published><updated>2023-10-28T19:29:38.263-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>La lista de correos electrónicos para los usuarios que tienen permiso para leer el blog.</title><content type='text'></content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_READER_PERMISSION'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_READER_PERMISSION'/><author><name>pancimovies</name><uri>https://www.blogger.com/profile/17016404698357411229</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='35' height='35' src='//www.blogger.com/img/blogger_logo_round_35.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-7600403054916393488.settings.BLOG_SEARCHABLE</id><published>2023-10-28T19:29:18.129-07:00</published><updated>2023-10-28T19:29:38.263-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Si este blog podrá indexarse en los motores de búsqueda.</title><content type='text'>true</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_SEARCHABLE'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_SEARCHABLE'/><author><name>pancimovies</name><uri>https://www.blogger.com/profile/17016404698357411229</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='35' height='35' src='//www.blogger.com/img/blogger_logo_round_35.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-7600403054916393488.settings.BLOG_SEND_EMAIL</id><published>2023-10-28T19:29:18.129-07:00</published><updated>2023-10-28T19:29:38.263-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Lista de correos electrónicos separados por comas para enviar nuevas entradas de blog a</title><content type='text'></content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_SEND_EMAIL'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_SEND_EMAIL'/><author><name>pancimovies</name><uri>https://www.blogger.com/profile/17016404698357411229</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='35' height='35' src='//www.blogger.com/img/blogger_logo_round_35.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-7600403054916393488.settings.BLOG_SHOW_URL</id><published>2023-10-28T19:29:18.129-07:00</published><updated>2023-10-28T19:29:38.263-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Si se muestra un cuadro de vínculos relacionados en la composición de entradas.</title><content type='text'>false</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_SHOW_URL'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_SHOW_URL'/><author><name>pancimovies</name><uri>https://www.blogger.com/profile/17016404698357411229</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='35' height='35' src='//www.blogger.com/img/blogger_logo_round_35.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-7600403054916393488.settings.BLOG_SUBDOMAIN</id><published>2023-10-28T19:29:18.129-07:00</published><updated>2023-10-28T19:29:38.263-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>El subdominio BlogSpot bajo el cual publicas tu blog</title><content type='text'>vumo23</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_SUBDOMAIN'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_SUBDOMAIN'/><author><name>pancimovies</name><uri>https://www.blogger.com/profile/17016404698357411229</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='35' height='35' src='//www.blogger.com/img/blogger_logo_round_35.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-7600403054916393488.settings.BLOG_TIME_STAMP_FORMAT</id><published>2023-10-28T19:29:18.129-07:00</published><updated>2023-10-28T19:29:38.263-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>El número del formato de fecha</title><content type='text'>15</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_TIME_STAMP_FORMAT'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_TIME_STAMP_FORMAT'/><author><name>pancimovies</name><uri>https://www.blogger.com/profile/17016404698357411229</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='35' height='35' src='//www.blogger.com/img/blogger_logo_round_35.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-7600403054916393488.settings.BLOG_TIME_ZONE</id><published>2023-10-28T19:29:18.129-07:00</published><updated>2023-10-28T19:29:38.263-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>La zona horaria de este blog</title><content type='text'>America/Los_Angeles</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_TIME_ZONE'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_TIME_ZONE'/><author><name>pancimovies</name><uri>https://www.blogger.com/profile/17016404698357411229</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='35' height='35' src='//www.blogger.com/img/blogger_logo_round_35.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-7600403054916393488.settings.BLOG_USE_LIGHTBOX</id><published>2023-10-28T19:29:18.129-07:00</published><updated>2023-10-28T19:29:38.263-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Si deseas que las imágenes se muestren en Lightbox al hacer clic en ellas.</title><content type='text'>true</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_USE_LIGHTBOX'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/7600403054916393488/settings/BLOG_USE_LIGHTBOX'/><author><name>pancimovies</name><uri>https://www.blogger.com/profile/17016404698357411229</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='35' height='35' src='//www.blogger.com/img/blogger_logo_round_35.png'/></author></entry></feed>
